@@ -204,7 +204,7 @@ class UserController extends Controller{
         $hash = $request->get("authorization", null);
         $authCheck = $helpers->authCheck($hash);
         
-        if($authCheck){
+        if($authCheck == true){
             $identity = $helpers->authCheck($hash, true);
             
             $em = $this->getDoctrine()->getManager();
