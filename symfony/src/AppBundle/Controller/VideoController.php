@@ -16,6 +16,8 @@ class VideoController extends Controller{
     public function pruebasAction(){
         echo "Hola controlador video";
         die();
+        
+        //Comentario para probar el github
     }
     
     
