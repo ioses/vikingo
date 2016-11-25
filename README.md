@@ -81,3 +81,8 @@ git push
 
 
 PARA VER LOS COMMITS
+
+git log --pretty=oneline
+
+
+Prueba para volver al commit anterior
