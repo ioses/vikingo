@@ -55,7 +55,10 @@ php bin/console doctrine:mapping:import BackendBundle yml   // opcional   --filt
  actualizar composer
  
  composer update
- Crear repositorio (una vez)
+ 
+ 
+ 
+CREAR REPOSITORIO
 
 git init
 
@@ -67,10 +70,14 @@ git remote add origin URL repositorio
 
 git push origin master
 
-Para actualizar
+PARA ACTUALIZAR
 
 git add .
 
 git commit -m "Comentario"
 
 git push
+
+
+
+PARA VER LOS COMMITS
