@@ -184,6 +184,118 @@ class VideoController extends Controller{
         return $helpers->json($data);
     }
     
+   
+    public function uploadAction(Request $request, $video_id){
+        
+        $helpers = $this->get("app.helpers");
+        
+        $hash = $request->get("authorization", null);
+        
+        $authCheck = $helpers->authCheck($hash);
+        
+        if($authCheck == true){
+            
+            $identity = $helpers->authCheck($hash, true);
+            
+            $em = $this->getDoctrine()->getManager();
+            $video = $em->getRepository("BackendBundle:Video")->findOneBy(array(
+                "id"=>$video_id
+                ));
+                
+            if($video_id!=null && isset($identity->sub) && $identity->sub == $video->getUser()->getId()){
+                
+                //Recoger el fichero de imagen
+                $file = $request->files->get('image',null);
+                 //Recoger el fichero de video
+                $file_video = $request->files->get('video',null);
+                
+                if($file!=null && !empty($file)){
+                    $ext = $file->guessExtension();
+                    
+                    if($ext == "jpeg" || $ext == "jpg" || $ext == "png"){
+                        $file_name = time().".".$ext;
+                        
+                        $path_of_file="uploads/video_images/video_".$video_id;
+                        $file->move($path_of_file, $file_name);
+                        
+                        $video->setImage($file_name);
+                        
+                        $em->persist($video);
+                        $em->flush();
+                            
+                         $data = array(
+                            "status"=>"success",
+                            "code" => 200,
+                            "msg"=>"Image file for video uploaded"
+                        );                    
+                    }else{
+                         $data = array(
+                            "status"=>"error",
+                            "code" => 400,
+                            "msg"=>"Image format error"
+                        );
+                    }
+                }else{
+                    if($file_video!=null && !empty($file_video)){
+                         $ext = $file_video->guessExtension();
+                       
+                       if($ext == "mp4" || $ext == "avi"){
+                            $file_name = time().".".$ext;
+                            
+                            $path_of_file="uploads/video_files/video_".$video_id;
+                            $file_video->move($path_of_file, $file_name);
+                            
+                            $video->setVideoPath($file_name);
+                            
+                            $em->persist($video);
+                            $em->flush();
+                            
+                            
+                             $data = array(
+                                "status"=>"success",
+                                "code" => 200,
+                                "msg"=>"Video file uploaded"
+                            );   
+                       }else{
+                            $data = array(
+                                "status"=>"error",
+                                "code" => 400,
+                                "msg"=>"Video format error"
+                            );
+                       }
+                    }else{
+                    
+                     $data = array(
+                        "status"=>"error",
+                        "code" => 400,
+                        "msg"=>"Video upload error. No image or video"
+                        );
+                }
+                    
+                }
+                
+                
+            }else{
+                
+                 $data = array(
+                    "status"=>"error",
+                    "code" => 400,
+                    "msg"=>"Video upload error"
+                );
+                
+            }
+            
+        }else{
+
+            $data = array(
+                "status"=>"error",
+                "code" => 400,
+                "msg"=>"Authorization not valid of user"
+                );
+        }
+        
+        return $helpers->json($data);
+    }
     
     
 }
