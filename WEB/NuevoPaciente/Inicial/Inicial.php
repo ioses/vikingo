@@ -175,7 +175,7 @@ if (!isset($_SESSION["NombreHospital"])){
 					        </dt>
 					        <dd>
 					            <label for="Localizacion">
-                                    <select id="Localizacion" name="Localizacion" style="width: 25%" required>
+                                    <select id="Localizacion" name="Localizacion" style="width: 25%" required onchange="CambioVariables();">
                                         <option value="0">0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -195,6 +195,30 @@ if (!isset($_SESSION["NombreHospital"])){
                                     </select>
                                 (cm.)</label>
 					        </dd>
+                            <?php
+                            if ($Nombre="HOSPITALPRUEBA"){
+                            ?>
+                            <dt>
+                                <label class="margen">Clasificación Rullier</label>
+                            </dt>
+                            <dd>
+                                <label for="Clasificacion_Rullier">
+                                    <select id="Clasificacion_Rullier" name="Clasificacion_Rullier" style="width: 25%">
+                                        <option value="0"></option>
+                                        <option value="1">I</option>
+                                        <option value="2">II</option>
+                                        <option value="3">III</option>
+                                        <option value="4">IV</option>
+                                    </select>
+                                </label>
+                            </dd>
+                            <?php
+                            }else{
+                            ?>
+                            <input type="hidden" id="Clasificacion_Rullier" value="0"/>
+                            <?php
+                            }
+                            ?>
 					        <dt>
 					            <label class="margen">Tumor sincrónico de colon</label>
 					        </dt>

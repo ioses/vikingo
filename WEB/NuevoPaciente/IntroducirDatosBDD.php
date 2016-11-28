@@ -49,6 +49,7 @@
         $Fecha_Nacimiento=$_SESSION["Fecha_Nacimiento"];
         $Sexo=$_SESSION["Sexo"];
         $Localizacion=$_SESSION["Localizacion"];
+        $Clasificacion_Rullier=$_SESSION["Clasificacion_Rullier"];
         
         $Sincro=$_SESSION["Sincro"];
         $SincroColonDerecho=$_SESSION["SincroColonDerecho"];
@@ -1265,8 +1266,8 @@ else //Introducimos el nuevo paciente en la base de datos
     
 //Se insertan los datos generales en la tabla inicial
 
-$sqlInicial="INSERT INTO inicial (Id_Paciente, Localizacion, B_Sincro, B_Tec_ECO, Tec_TAC, B_Tec_RMN, Id_Integ_Esfint, B_Inv_Vecinos, B_Metast_Inicial, Id_Estadio_Radio)
-            VALUES ('$Id_Paciente','$Localizacion','$Sincro','$ECO','$TAC','$RMN','$Integ_Esfinter', '$Inv_Vecinos', '$Metast_Inicial', '$Estadio_Radio')";
+$sqlInicial="INSERT INTO inicial (Id_Paciente, Localizacion, B_Sincro, B_Tec_ECO, Tec_TAC, B_Tec_RMN, Id_Integ_Esfint, B_Inv_Vecinos, B_Metast_Inicial, Id_Estadio_Radio, Clasificacion_Rullier)
+            VALUES ('$Id_Paciente','$Localizacion','$Sincro','$ECO','$TAC','$RMN','$Integ_Esfinter', '$Inv_Vecinos', '$Metast_Inicial', '$Estadio_Radio','$Clasificacion_Rullier')";
             
     mysqli_query($conexion,$sqlInicial)
      or die(header("Location: EliminaPaciente/elimina_paciente.php"));
@@ -3356,6 +3357,7 @@ $rowInicial=mysqli_fetch_array($resInicial);
 
 $IDInicial=$rowInicial[0];
 $Localizacion=$rowInicial[2];
+$Clasificacion_Rullier=$rowInicial[11];
 $Sincro=$rowInicial[3];
 $Invasion=$rowInicial[8];
 $MetastasisInicial=$rowInicial[9];
@@ -4222,7 +4224,7 @@ $sqlRellenaTablaGeneral="INSERT INTO tabla_general (Hospital, NHC, Recidiva, Fec
 							 TtoNeo, TipoNeo, TipoNoNeo, TtoAdy, TipoAdy, ApT, ApN, ApM, GangliosAis, GangliosAfec, MargenDistal, MargenCircun,
 							 TipoRes, Regresion, MesoCal, EstadioPatologico, Comentarios_Adicionales, Orientacion, Transfusiones,
                              ECO, RMN, Dist_Tumor, Dist_Adeno, Integ_Esfinter, Cirujano_Principal, Cirujano_Ayudante, Obstruccion, Tipo_Histologico, Otros_Histologico, Estadio_Tumor_Sincronico,
-                             Localizacion_Recidiva, Intervencion_Recidiva, Localizacion_Metastasis, Intervencion_Metastasis, Localizacion_Segundo_Tumor, Intervencion_Segundo_Tumor, Causa_Imposibilidad) 
+                             Localizacion_Recidiva, Intervencion_Recidiva, Localizacion_Metastasis, Intervencion_Metastasis, Localizacion_Segundo_Tumor, Intervencion_Segundo_Tumor, Causa_Imposibilidad, Clasificacion_Rullier) 
 							 VALUES 
 							 ('$Id_Hospital', '$NHC', '$Recidiva', '$FechaRecidiva', '$Metastasis', '$FechaMetastasis', '$Segundo_Tumor', '$FechaSegundoTumor', '$Estado', '$CausaMuerte', '$FechaMuerte', 
 							 '$FechaRevision', '$Imposibilidad', '$MesesSeguimiento', '$FechaNacimiento', '$Sexo', '$Localizacion', '$Sincro', '$EcoT', '$EcoN', '$TAC', '$RmnT', '$RmnN', '$EstadioRadio', 
@@ -4236,7 +4238,7 @@ $sqlRellenaTablaGeneral="INSERT INTO tabla_general (Hospital, NHC, Recidiva, Fec
                               '$ECO', '$RMN', '$RmnDist_Tumor', '$RmnDist_Adeno', '$Integ_Esfinter', 
                             '$CirujanoPrincipal', '$CirujanoAyudante', '$Obstruccion', '$TipoHistologico', '$OtrosHistologico', '$Tumor_Sincronico',
                             '$LocalizacionRecidiva', '$IntervencionRecidiva', '$LocalizacionMetastasis', '$IntervencionMetastasis', 
-                            '$LocalizacionSegundoTumor', '$IntervencionSegundoTumor', '$CausaImposibilidad')"; 
+                            '$LocalizacionSegundoTumor', '$IntervencionSegundoTumor', '$CausaImposibilidad','$Clasificacion_Rullier')"; 
 
 
 

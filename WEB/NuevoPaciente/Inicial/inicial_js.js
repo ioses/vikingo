@@ -70,6 +70,16 @@ function DialogMessage(str, title)
       
 /* **********************   javascript   *********************************/ 
 
+function CambioVariables(){
+    if(document.getElementById("Localizacion").value>6){
+        document.getElementById("Clasificacion_Rullier").disabled=true;
+        
+        document.getElementById("Clasificacion_Rullier").value=0;
+    }else{
+        document.getElementById("Clasificacion_Rullier").disabled=false;
+    }
+}
+
 function HabilitarECO() {
     if (document.Inicial.B_Tec_ECO[0].checked) {
         document.getElementById("ECO_Tipo_T").disabled = true;

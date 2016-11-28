@@ -8,6 +8,7 @@ $a=array(
     "Fecha_Nacimiento"=>$_SESSION["Fecha_Nacimiento"],
     "Sexo"=>$_SESSION["Sexo"],
     "Localizacion"=>$_SESSION["Localizacion"],
+    "Clasificacion_Rullier"=>$_SESSION["Clasificacion_Rullier"],
     "Sincro"=>$_SESSION["Sincro"],
     "SincroColonDerecho"=>$_SESSION["SincroColonDerecho"],
     "SincroColonIzquierdo"=>$_SESSION["SincroColonIzquierdo"],

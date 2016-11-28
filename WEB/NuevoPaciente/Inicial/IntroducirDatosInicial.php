@@ -50,6 +50,18 @@ $Localizacion=intval($Localizacion);
 
 $_SESSION["Localizacion"]=$Localizacion;
 
+if (isset($_POST["Clasificacion_Rullier"])){
+	$Clasificacion_Rullier=$_POST["Clasificacion_Rullier"];
+	$Clasificacion_Rullier=strip_tags($Clasificacion_Rullier);
+	$Clasificacion_Rullier=intval($Clasificacion_Rullier);	
+	$_SESSION["Clasificacion_Rullier"]=$Clasificacion_Rullier;
+}else{
+	$Clasificacion_Rullier=null;
+	$_SESSION["Clasificacion_Rullier"]=$Clasificacion_Rullier;
+}
+
+
+
 $Sincro=$_POST["B_Sincro"];
 $Sincro=strip_tags($Sincro);
 $Sincro=intval($Sincro);

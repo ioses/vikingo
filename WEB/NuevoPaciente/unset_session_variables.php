@@ -20,6 +20,10 @@
  if (isset($_SESSION["Localizacion"])){
     unset($_SESSION["Localizacion"]);
  }
+ 
+  if (isset($_SESSION["Clasificacion_Rullier"])){
+    unset($_SESSION["Clasificacion_Rullier"]);
+ }
  	 
 		
  if (isset($_SESSION["Sincro"])){
