@@ -541,6 +541,7 @@ if ($_POST["Comentarios_Adicionales"] == 1)
 {
     echo "<th>ComentariosAdicionales</th>";
 }
+    echo "<th>Clasificacion_Rullier</th>";
 
 echo "</tr> ";
 
@@ -1732,7 +1733,7 @@ if ($_POST["Comentarios_Adicionales"] == 1)
     echo "<td>".$row["Comentarios_Adicionales"]."</td> ";
 }       
 	
-	
+	echo "<td>".$row["Clasificacion_Rullier"]."</td> ";
     
     
 		
