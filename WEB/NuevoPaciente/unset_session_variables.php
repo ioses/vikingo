@@ -272,6 +272,19 @@ if (isset($_SESSION["Tipo_Anastomosis_Proyecto"])){
 if (isset($_SESSION["Tipo_Anastomosis_coloanal"])){
     unset($_SESSION["Tipo_Anastomosis_coloanal"]); 
 }
+
+if (isset($_SESSION["Reseccion_interesfinteriana"])){
+    unset($_SESSION["Reseccion_interesfinteriana"]); 
+}
+
+if (isset($_SESSION["Tipo_Reseccion_interesfinteriana"])){
+    unset($_SESSION["Tipo_Reseccion_interesfinteriana"]); 
+}
+
+if (isset($_SESSION["Tipo_Reseccion_organos"])){
+    unset($_SESSION["Tipo_Reseccion_organos"]); 
+}
+	
 				
 if (isset($_SESSION["Orientacion"])){
     unset($_SESSION["Orientacion"]); 

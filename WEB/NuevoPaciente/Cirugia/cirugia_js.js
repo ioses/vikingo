@@ -622,6 +622,8 @@ function HabilitaCirugia() {
         document.getElementById("Tipo_Anastomosis_Proyecto").disabled = true;
         document.getElementById("Tipo_Anastomosis_coloanal").disabled = true;
         document.getElementById("Reseccion_interesfinteriana").disabled = true;
+        document.getElementById("Tipo_Reseccion_interesfinteriana").disabled = true;
+        document.getElementById("Tipo_Reseccion_organos").disabled = true;
         document.getElementById("Otras_Tecnicas").disabled = true;
         document.getElementById("Exeresis_Mesorrecto").disabled = true;
         document.getElementById("Otras_Resecciones_SI").disabled = true;
@@ -728,6 +730,8 @@ function HabilitaCirugia() {
          document.getElementById("Tipo_Anastomosis_Proyecto").disabled = false;
          document.getElementById("Tipo_Anastomosis_coloanal").disabled = false;
          document.getElementById("Reseccion_interesfinteriana").disabled = false;
+         document.getElementById("Tipo_Reseccion_interesfinteriana").disabled = false;
+         document.getElementById("Tipo_Reseccion_organos").disabled = false;
         document.getElementById("Otras_Tecnicas").disabled = false;
         //document.getElementById("Exeresis_Mesorrecto").disabled = false;
         document.getElementById("Otras_Resecciones_SI").disabled = false;
@@ -941,6 +945,10 @@ function CargarDatos() {
                  document.getElementById("Tipo_Anastomosis_coloanal").value=data["Tipo_Anastomosis_coloanal"];
                  
                  document.getElementById("Reseccion_interesfinteriana").value=data["Reseccion_interesfinteriana"];
+                 
+                  document.getElementById("Tipo_Reseccion_interesfinteriana").value=data["Tipo_Reseccion_interesfinteriana"];
+                  
+                  document.getElementById("Tipo_Reseccion_organos").value=data["Tipo_Reseccion_organos"];
                
                //var cir = data["Otra_Tecnica_Cirugia"][1] + " " + data["Otra_Tecnica_Cirugia"][2] + " count " + data["Otra_Tecnica_Cirugia"].length + "; ";   
                

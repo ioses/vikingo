@@ -412,6 +412,32 @@ if (!isset($_SESSION["NombreHospital"])){
                             <?php
                             }
                             ?>
+                            <?php
+                            if ($Nombre=="HOSPITALPRUEBA" && $loc<7){
+                            ?>
+                            <dt>
+                                <label class="negrita" color="red">Tipo Resección interesfinteriana</label>
+                            </dt>
+                            <dd>
+                                <label for="Tipo_Reseccion_interesfinteriana">
+                                    <select id="Tipo_Reseccion_interesfinteriana" name="Tipo_Reseccion_interesfinteriana" style="width: 25%">
+                                        <option value="0"></option>
+                                        <option value="1">Completa</option>
+                                        <option value="2">Parcial</option>
+
+                                    </select>
+                                </label>
+                            </dd>
+                            <?php
+                            }else{
+                            ?>
+                            <input type="hidden" id="Tipo_Reseccion_interesfinteriana" value="0"/>
+                            <?php
+                            }
+                            ?>
+                            
+                            
+                     
                                     
                                     <dt>
                                         <label class="negrita">Otras resecciones viscerales</label>
@@ -423,6 +449,31 @@ if (!isset($_SESSION["NombreHospital"])){
                                         <label for="Otras_Resecciones_SI">
                                             <input type="radio" name="Otras_Resecciones" id="Otras_Resecciones_SI" value="1" required disabled onclick="HabilitaReseVisc();" />
                                         Si</label>
+                                        
+                            <?php
+                            if ($Nombre=="HOSPITALPRUEBA" && $loc<7){
+                            ?>
+                            <dt>
+                                <label class="negrita" color="red">Tipo Resección órganos</label>
+                            </dt>
+                            <dd>
+                                <label for="Tipo_Reseccion_organos">
+                                    <select id="Tipo_Reseccion_organos" name="Tipo_Reseccion_organos" style="width: 25%">
+                                        <option value="0"></option>
+                                        <option value="1">Parcial</option>
+                                        <option value="2">Total</option>
+
+                                    </select>
+                                </label>
+                            </dd>
+                            <?php
+                            }else{
+                            ?>
+                            <input type="hidden" id="Tipo_Reseccion_organos" value="0"/>
+                            <?php
+                            }
+                            ?>
+                            
                                         
                                         <dl class="dl-horizontal-secundario-mediano-checkbox">
                                             <dt>

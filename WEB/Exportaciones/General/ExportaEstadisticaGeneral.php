@@ -584,6 +584,16 @@ if ($_POST["Reseccion_interesfinteriana"] == 1)
     echo "<th>Reseccion_interesfinteriana</th>";
 }
 
+if ($_POST["Tipo_Reseccion_interesfinteriana"] == 1)
+{
+    echo "<th>Tipo_Reseccion_interesfinteriana</th>";
+}
+
+if ($_POST["Tipo_Reseccion_organos"] == 1)
+{
+    echo "<th>Tipo_Reseccion_organos</th>";
+}
+
 
 echo "</tr> ";
 
@@ -1782,7 +1792,17 @@ if ($_POST["Tipo_Anastomosis_coloanal"] == 1)
 if ($_POST["Reseccion_interesfinteriana"] == 1)
 {	
     echo "<td>".$row["Reseccion_interesfinteriana"]."</td> ";
-}  
+} 
+
+if ($_POST["Tipo_Reseccion_interesfinteriana"] == 1)
+{	
+    echo "<td>".$row["Tipo_Reseccion_interesfinteriana"]."</td> ";
+} 
+
+if ($_POST["Tipo_Reseccion_organos"] == 1)
+{	
+    echo "<td>".$row["Tipo_Reseccion_organos"]."</td> ";
+} 
 	
 		
 echo "</tr>";

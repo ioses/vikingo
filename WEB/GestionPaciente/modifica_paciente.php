@@ -75,6 +75,8 @@
     $_SESSION["Tipo_Anastomosis_Proyecto"] = null;
     $_SESSION["Tipo_Anastomosis_coloanal"] = null;
     $_SESSION["Reseccion_interesfinteriana"] = null;
+    $_SESSION["Tipo_Reseccion_interesfinteriana"] = null;
+    $_SESSION["Tipo_Reseccion_organos"] = null;
     $_SESSION["Otra_Tecnica_Cirugia"] = null;
 	$_SESSION["Orientacion"] = null;
     $_SESSION["Exeresis_Meso"] = null;
@@ -549,6 +551,8 @@
         $_SESSION["Tipo_Anastomosis_Proyecto"] = intval($rowSiCirugia['Tipo_Anastomosis_Proyecto']);
         $_SESSION["Tipo_Anastomosis_coloanal"] = intval($rowSiCirugia['Tipo_Anastomosis_coloanal']);
         $_SESSION["Reseccion_interesfinteriana"] = intval($rowSiCirugia['Reseccion_interesfinteriana']);
+        $_SESSION["Tipo_Reseccion_interesfinteriana"] = intval($rowSiCirugia['Tipo_Reseccion_interesfinteriana']);
+         $_SESSION["Tipo_Reseccion_organos"] = intval($rowSiCirugia['Tipo_Reseccion_organos']);
         $_SESSION["Otra_Tecnica_Cirugia"] = null;
         
         /*if ($rowSiCirugia['Id_Otra_Tecnica'] != null)
