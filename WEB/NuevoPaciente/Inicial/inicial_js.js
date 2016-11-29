@@ -398,6 +398,8 @@ function CargarDatos() {
              /******* Localización *******/
            
             $('#Localizacion').prop('selectedIndex', data["Localizacion"]);
+            
+            $('#Clasificacion_Rullier').prop('selectedIndex', data["Clasificacion_Rullier"]);
                        
             switch (data["Sincro"]) {
                 case 0:

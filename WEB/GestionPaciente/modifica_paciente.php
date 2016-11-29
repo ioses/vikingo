@@ -14,6 +14,7 @@
     $_SESSION["Fecha_Nacimiento"] = null;
     $_SESSION["Sexo"] = null;
     $_SESSION["Localizacion"] = null;
+    $_SESSION["Clasificacion_Rullier"] = null;
     $_SESSION["Sincro"] = null;
     $_SESSION["SincroColonDerecho"] = null;
     $_SESSION["SincroColonIzquierdo"] = null;
@@ -249,6 +250,8 @@
     /**** Localización ***/
 
     $_SESSION["Localizacion"]=$rowInicial['Localizacion'];
+    
+    $_SESSION["Clasificacion_Rullier"] = intval($rowInicial['Clasificacion_Rullier']);
     
     $_SESSION["Sincro"]=intval($rowInicial['B_Sincro']);
     
