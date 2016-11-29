@@ -38,6 +38,7 @@ $a=array(
     "Cirujano_Principal"=>$_SESSION["Cirujano_Principal"],
     "Cirujano_Ayudante"=>$_SESSION["Cirujano_Ayudante"],
     "Tecnicas_Cirugia"=>$_SESSION["Tecnicas_Cirugia"],
+    "Anastomosis_coloanal"=>$_SESSION["Anastomosis_coloanal"],
     "Otra_Tecnica_Cirugia"=>$Tecnicas,
 	"Orientacion"=>$_SESSION["Orientacion"],
     "Exeresis_Meso"=>$_SESSION["Exeresis_Meso"],

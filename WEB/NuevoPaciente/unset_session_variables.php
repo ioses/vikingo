@@ -263,7 +263,11 @@ if (isset($_SESSION["Fecha_Alta"])){
 
 if (isset($_SESSION["Otra_Tecnica_Cirugia"])){
     unset($_SESSION["Otra_Tecnica_Cirugia"]); 
-}		
+}
+
+if (isset($_SESSION["Anastomosis_coloanal"])){
+    unset($_SESSION["Anastomosis_coloanal"]); 
+}
 				
 if (isset($_SESSION["Orientacion"])){
     unset($_SESSION["Orientacion"]); 

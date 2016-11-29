@@ -619,6 +619,7 @@ function HabilitaCirugia() {
         document.getElementById("Cirujano_Principal").disabled = true;
         document.getElementById("Cirujano_Ayudante").disabled = true;
         document.getElementById("Tecnicas_Cirugia").disabled = true;
+        document.getElementById("Anastomosis_coloanal").disabled = true;
         document.getElementById("Otras_Tecnicas").disabled = true;
         document.getElementById("Exeresis_Mesorrecto").disabled = true;
         document.getElementById("Otras_Resecciones_SI").disabled = true;
@@ -722,6 +723,7 @@ function HabilitaCirugia() {
         document.getElementById("Cirujano_Principal").disabled = false;
         document.getElementById("Cirujano_Ayudante").disabled = false;
         document.getElementById("Tecnicas_Cirugia").disabled = false;
+         document.getElementById("Anastomosis_coloanal").disabled = false;
         document.getElementById("Otras_Tecnicas").disabled = false;
         //document.getElementById("Exeresis_Mesorrecto").disabled = false;
         document.getElementById("Otras_Resecciones_SI").disabled = false;
@@ -928,6 +930,9 @@ function CargarDatos() {
                     }
                     
                 }
+                
+                //Anastomosis coloanal
+                 document.getElementById("Anastomosis_coloanal").value=data["Anastomosis_coloanal"];
                
                //var cir = data["Otra_Tecnica_Cirugia"][1] + " " + data["Otra_Tecnica_Cirugia"][2] + " count " + data["Otra_Tecnica_Cirugia"].length + "; ";   
                

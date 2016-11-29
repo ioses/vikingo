@@ -351,6 +351,10 @@ if (!isset($_SESSION["NombreHospital"])){
                                 <label class="labelCheck" for="Tecnica">
                                     <input type="checkbox" id="Tecnica" name="Tecnica" value="1"/>
                                 Técnica</label>
+                            
+                                <label class="labelCheck" for="Anastomosis_coloanal">
+                                    <input type="checkbox" id="Anastomosis_coloanal" name="Anastomosis_coloanal" value="1"/>
+                                Anastomosis coloanal</label>
                                 
                                 <label class="labelCheck" for="OtraTecnica">
                                     <input type="checkbox" id="OtraTecnica" name="OtraTecnica" value="1"/>

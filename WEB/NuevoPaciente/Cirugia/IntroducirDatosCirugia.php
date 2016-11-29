@@ -113,6 +113,17 @@ if (isset($_POST["Tecnicas_Cirugia"])){
 	$_SESSION["Tecnicas_Cirugia"]=$Tecnica_Cirugia;
 }
 
+if (isset($_POST["Anastomosis_coloanal"])){
+	$Anastomosis_coloanal=$_POST["Anastomosis_coloanal"];
+	$Anastomosis_coloanal=strip_tags($Anastomosis_coloanal);
+	$Anastomosis_coloanal=intval($Anastomosis_coloanal);
+	$_SESSION["Anastomosis_coloanal"]=$Anastomosis_coloanal;
+}else{
+	$Anastomosis_coloanal=null;
+	$_SESSION["Anastomosis_coloanal"]=$Anastomosis_coloanal;
+}
+
+
 if (isset($_POST["Otras_Tecnicas"])){
     unset($_SESSION["Otra_Tecnica_Cirugia"]);
      foreach ($_POST['Otras_Tecnicas'] as $Otra_Tecnica_Cirugia) {

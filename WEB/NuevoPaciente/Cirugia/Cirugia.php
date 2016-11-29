@@ -278,6 +278,35 @@ if (!isset($_SESSION["NombreHospital"])){
                                             ?>
                                         </select>
                                     </dd>
+                                    
+                            <?php
+                            
+                            //2016Diciembre introduccion nuevas variables para estudio 5 hospitales
+                            if ($Nombre="HOSPITALPRUEBA" && $loc<7){
+                            ?>
+                            <dt>
+                                <label class="margen">Anastomosis coloanal</label>
+                            </dt>
+                            <dd>
+                                <label for="Anastomosis_coloanal">
+                                    <select id="Anastomosis_coloanal" name="Anastomosis_coloanal" style="width: 25%">
+                                        <option value="0"></option>
+                                        <option value="1">Coloanal</option>
+                                        <option value="2">Colorrectal ultrabaja</option>
+                                        <option value="3">Hartmann</option>
+                                    </select>
+                                </label>
+                            </dd>
+                            <?php
+                            }else{
+                            ?>
+                            <input type="hidden" id="Anastomosis_coloanal" value="0"/>
+                            <?php
+                            }
+                            ?>
+                                    
+                                    
+                                    
                                 
                                     <dt>
                                         <label class="negrita">Otra técnica</label>

@@ -568,6 +568,13 @@ if ($_POST["Clasificacion_Rullier"] == 1)
 {
     echo "<th>Clasificacion_Rullier</th>";
 }
+
+if ($_POST["Anastomosis_coloanal"] == 1)
+{
+    echo "<th>Anastomosis_coloanal</th>";
+}
+
+
 echo "</tr> ";
 
 
@@ -1750,6 +1757,11 @@ if ($_POST["Comentarios_Adicionales"] == 1)
 if ($_POST["Clasificacion_Rullier"] == 1)
 {	
     echo "<td>".$row["Clasificacion_Rullier"]."</td> ";
+}  
+
+if ($_POST["Anastomosis_coloanal"] == 1)
+{	
+    echo "<td>".$row["Anastomosis_coloanal"]."</td> ";
 }  
 		
 echo "</tr>";
