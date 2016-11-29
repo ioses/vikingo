@@ -22,6 +22,7 @@ $(document).ready(function(){
         document.getElementById('FechaNacimiento').checked = true;
         document.getElementById('Sexo').checked = true;
         document.getElementById('Localizacion').checked = true;
+        document.getElementById('Clasificacion_Rullier').checked = true;
         document.getElementById('TumorSincronico').checked = true;
         document.getElementById('EcoT').checked = true;
         document.getElementById('EcoN').checked = true;
@@ -180,6 +181,7 @@ $(document).ready(function(){
         document.getElementById('FechaNacimiento').checked = false;
         document.getElementById('Sexo').checked = false;
         document.getElementById('Localizacion').checked = false;
+        document.getElementById('Clasificacion_Rullier').checked = false;
         document.getElementById('TumorSincronico').checked = false;
         document.getElementById('EcoT').checked = false;
         document.getElementById('EcoN').checked = false;
@@ -323,7 +325,8 @@ $(document).ready(function(){
         document.getElementById('NHC').checked = true; 
         document.getElementById('FechaNacimiento').checked = true;
         document.getElementById('Sexo').checked = true;
-        document.getElementById('Localizacion').checked = true;
+        document.getElementById('Localizacion').checked = false;
+        document.getElementById('Clasificacion_Rullier').checked = false;
         document.getElementById('TumorSincronico').checked = true;
         document.getElementById('EcoT').checked = true;
         document.getElementById('EcoN').checked = true;
@@ -347,6 +350,7 @@ $(document).ready(function(){
         document.getElementById('FechaNacimiento').checked = false;
         document.getElementById('Sexo').checked = false;
         document.getElementById('Localizacion').checked = false;
+        document.getElementById('Clasificacion_Rullier').checked = false;
         document.getElementById('TumorSincronico').checked = false;
         document.getElementById('EcoT').checked = false;
         document.getElementById('EcoN').checked = false;

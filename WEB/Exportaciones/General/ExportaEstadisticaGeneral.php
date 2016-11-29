@@ -564,8 +564,10 @@ if ($_POST["Comentarios_Adicionales"] == 1)
     echo "<th>ComentariosAdicionales</th>";
 }
 
-//Luego habra que hacer seleccion en EstadisticaGeneral
-echo "<th>Clasificacion_Rullier</th>";
+if ($_POST["Clasificacion_Rullier"] == 1)
+{
+    echo "<th>Clasificacion_Rullier</th>";
+}
 echo "</tr> ";
 
 
@@ -1745,9 +1747,10 @@ if ($_POST["Comentarios_Adicionales"] == 1)
     echo "<td>".$row["Comentarios_Adicionales"]."</td> ";
 }       
 	
-	
+if ($_POST["Clasificacion_Rullier"] == 1)
+{	
     echo "<td>".$row["Clasificacion_Rullier"]."</td> ";
-    
+}  
 		
 echo "</tr>";
 	

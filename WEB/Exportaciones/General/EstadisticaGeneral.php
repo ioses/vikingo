@@ -196,6 +196,10 @@ if (!isset($_SESSION["NombreHospital"])){
                                     <input type="checkbox" id="Localizacion" name="Localizacion" value="1"/>
                                 Localización</label>
                                 
+                                <label class="labelCheck" for="Clasificacion_Rullier">
+                                    <input type="checkbox" id="Clasificacion_Rullier" name="Clasificacion_Rullier" value="1"/>
+                                Clasificación Rullier</label>
+                                
                                 <label class="labelCheck" for="TumorSincronico">
                                     <input type="checkbox" id="TumorSincronico" name="TumorSincronico" value="1"/>
                                 Tumor sincronico</label>
