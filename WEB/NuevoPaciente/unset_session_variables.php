@@ -265,8 +265,12 @@ if (isset($_SESSION["Otra_Tecnica_Cirugia"])){
     unset($_SESSION["Otra_Tecnica_Cirugia"]); 
 }
 
-if (isset($_SESSION["Anastomosis_coloanal"])){
-    unset($_SESSION["Anastomosis_coloanal"]); 
+if (isset($_SESSION["Tipo_Anastomosis_Proyecto"])){
+    unset($_SESSION["Tipo_Anastomosis_Proyecto"]); 
+}
+
+if (isset($_SESSION["Tipo_Anastomosis_coloanal"])){
+    unset($_SESSION["Tipo_Anastomosis_coloanal"]); 
 }
 				
 if (isset($_SESSION["Orientacion"])){

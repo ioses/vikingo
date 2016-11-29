@@ -39,7 +39,9 @@ $(document).ready(function(){
         document.getElementById('FechaCirugia').checked = true;
         document.getElementById('FechaAlta').checked = true;
         document.getElementById('Tecnica').checked = true;
-        document.getElementById('Anastomosis_coloanal').checked = true;
+        document.getElementById('Tipo_Anastomosis_Proyecto').checked = true;
+        document.getElementById('Tipo_Anastomosis_coloanal').checked = true;
+        document.getElementById('Reseccion_interesfinteriana').checked = true;
         document.getElementById('OtraTecnica').checked = true;
         document.getElementById('Orientacion').checked = true;
         document.getElementById('ExeresisMesorrecto').checked = true;
@@ -199,7 +201,9 @@ $(document).ready(function(){
         document.getElementById('FechaCirugia').checked = false;
         document.getElementById('FechaAlta').checked = false;
         document.getElementById('Tecnica').checked = false;
-        document.getElementById('Anastomosis_coloanal').checked = false;
+        document.getElementById('Tipo_Anastomosis_Proyecto').checked = false;
+        document.getElementById('Tipo_Anastomosis_coloanal').checked = false;
+        document.getElementById('Reseccion_interesfinteriana').checked = false;
         document.getElementById('OtraTecnica').checked = false;
         document.getElementById('Orientacion').checked = false;
         document.getElementById('ExeresisMesorrecto').checked = false;
@@ -393,7 +397,9 @@ $(document).ready(function(){
         document.getElementById('FechaCirugia').checked = true;
         document.getElementById('FechaAlta').checked = true;
         document.getElementById('Tecnica').checked = true;
-        document.getElementById('Anastomosis_coloanal').checked = true;
+        document.getElementById('Tipo_Anastomosis_Proyecto').checked = true;
+        document.getElementById('Tipo_Anastomosis_coloanal').checked = true;
+        document.getElementById('Reseccion_interesfinteriana').checked = true;
         document.getElementById('OtraTecnica').checked = true;
         document.getElementById('Orientacion').checked = true;
         document.getElementById('ExeresisMesorrecto').checked = true;
@@ -423,7 +429,9 @@ $(document).ready(function(){
         document.getElementById('FechaCirugia').checked = false;
         document.getElementById('FechaAlta').checked = false;
         document.getElementById('Tecnica').checked = false;
-        document.getElementById('Anastomosis_coloanal').checked = false;
+        document.getElementById('Tipo_Anastomosis_Proyecto').checked = false;
+        document.getElementById('Tipo_Anastomosis_coloanal').checked = false;
+        document.getElementById('Reseccion_interesfinteriana').checked = false;
         document.getElementById('OtraTecnica').checked = false;
         document.getElementById('Orientacion').checked = false;
         

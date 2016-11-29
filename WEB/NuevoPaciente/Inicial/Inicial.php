@@ -196,7 +196,9 @@ if (!isset($_SESSION["NombreHospital"])){
                                 (cm.)</label>
 					        </dd>
                             <?php
-                            if ($Nombre="HOSPITALPRUEBA"){
+                           // echo ("Que es".$Nombre);
+                            if ($Nombre=="HOSPITALPRUEBA"){
+                              
                             ?>
                             <dt>
                                 <label class="margen">Clasificación Rullier</label>

@@ -569,9 +569,19 @@ if ($_POST["Clasificacion_Rullier"] == 1)
     echo "<th>Clasificacion_Rullier</th>";
 }
 
-if ($_POST["Anastomosis_coloanal"] == 1)
+if ($_POST["Tipo_Anastomosis_Proyecto"] == 1)
 {
-    echo "<th>Anastomosis_coloanal</th>";
+    echo "<th>Tipo_Anastomosis_Proyecto</th>";
+}
+
+if ($_POST["Tipo_Anastomosis_coloanal"] == 1)
+{
+    echo "<th>Tipo_Anastomosis_coloanal</th>";
+}
+
+if ($_POST["Reseccion_interesfinteriana"] == 1)
+{
+    echo "<th>Reseccion_interesfinteriana</th>";
 }
 
 
@@ -1759,10 +1769,21 @@ if ($_POST["Clasificacion_Rullier"] == 1)
     echo "<td>".$row["Clasificacion_Rullier"]."</td> ";
 }  
 
-if ($_POST["Anastomosis_coloanal"] == 1)
+if ($_POST["Tipo_Anastomosis_Proyecto"] == 1)
 {	
-    echo "<td>".$row["Anastomosis_coloanal"]."</td> ";
+    echo "<td>".$row["Tipo_Anastomosis_Proyecto"]."</td> ";
 }  
+
+if ($_POST["Tipo_Anastomosis_coloanal"] == 1)
+{	
+    echo "<td>".$row["Tipo_Anastomosis_coloanal"]."</td> ";
+}  
+
+if ($_POST["Reseccion_interesfinteriana"] == 1)
+{	
+    echo "<td>".$row["Reseccion_interesfinteriana"]."</td> ";
+}  
+	
 		
 echo "</tr>";
 	

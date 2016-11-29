@@ -282,14 +282,14 @@ if (!isset($_SESSION["NombreHospital"])){
                             <?php
                             
                             //2016Diciembre introduccion nuevas variables para estudio 5 hospitales
-                            if ($Nombre="HOSPITALPRUEBA" && $loc<7){
+                            if ($Nombre=="HOSPITALPRUEBA" && $loc<7){
                             ?>
                             <dt>
-                                <label class="margen">Anastomosis coloanal</label>
+                                <label class="negrita">Tipo Anastomosis proyecto</label>
                             </dt>
                             <dd>
-                                <label for="Anastomosis_coloanal">
-                                    <select id="Anastomosis_coloanal" name="Anastomosis_coloanal" style="width: 25%">
+                                <label for="Tipo_Anastomosis_Proyecto">
+                                    <select id="Tipo_Anastomosis_Proyecto" name="Tipo_Anastomosis_Proyecto" style="width: 25%">
                                         <option value="0"></option>
                                         <option value="1">Coloanal</option>
                                         <option value="2">Colorrectal ultrabaja</option>
@@ -300,14 +300,38 @@ if (!isset($_SESSION["NombreHospital"])){
                             <?php
                             }else{
                             ?>
-                            <input type="hidden" id="Anastomosis_coloanal" value="0"/>
+                            <input type="hidden" id="Tipo_Anastomosis_Proyecto" value="0"/>
                             <?php
                             }
                             ?>
-                                    
-                                    
-                                    
-                                
+                            
+                            
+                            
+                            
+                            <?php
+                            if ($Nombre=="HOSPITALPRUEBA" && $loc<7){
+                            ?>
+                            <dt>
+                                <label class="negrita" color="red">Anastomosis coloanal</label>
+                            </dt>
+                            <dd>
+                                <label for="Tipo_Anastomosis_coloanal">
+                                    <select id="Tipo_Anastomosis_coloanal" name="Tipo_Anastomosis_coloanal" style="width: 25%">
+                                        <option value="0"></option>
+                                        <option value="1">Manual</option>
+                                        <option value="2">Mecánica</option>
+
+                                    </select>
+                                </label>
+                            </dd>
+                            <?php
+                            }else{
+                            ?>
+                            <input type="hidden" id="Tipo_Anastomosis_coloanal" value="0"/>
+                            <?php
+                            }
+                            ?>
+
                                     <dt>
                                         <label class="negrita">Otra técnica</label>
                                     </dt>
@@ -364,6 +388,30 @@ if (!isset($_SESSION["NombreHospital"])){
                                             ?>
                                         </select>
                                     </dd>
+                                    
+                                    <?php
+                            if ($Nombre=="HOSPITALPRUEBA" && $loc<7){
+                            ?>
+                            <dt>
+                                <label class="negrita" color="red">Resección interesfinteriana</label>
+                            </dt>
+                            <dd>
+                                <label for="Reseccion_interesfinteriana">
+                                    <select id="Reseccion_interesfinteriana" name="Reseccion_interesfinteriana" style="width: 25%">
+                                        <option value="0"></option>
+                                        <option value="1">Si</option>
+                                        <option value="2">No</option>
+
+                                    </select>
+                                </label>
+                            </dd>
+                            <?php
+                            }else{
+                            ?>
+                            <input type="hidden" id="Reseccion_interesfinteriana" value="0"/>
+                            <?php
+                            }
+                            ?>
                                     
                                     <dt>
                                         <label class="negrita">Otras resecciones viscerales</label>

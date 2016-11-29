@@ -113,15 +113,37 @@ if (isset($_POST["Tecnicas_Cirugia"])){
 	$_SESSION["Tecnicas_Cirugia"]=$Tecnica_Cirugia;
 }
 
-if (isset($_POST["Anastomosis_coloanal"])){
-	$Anastomosis_coloanal=$_POST["Anastomosis_coloanal"];
-	$Anastomosis_coloanal=strip_tags($Anastomosis_coloanal);
-	$Anastomosis_coloanal=intval($Anastomosis_coloanal);
-	$_SESSION["Anastomosis_coloanal"]=$Anastomosis_coloanal;
+if (isset($_POST["Tipo_Anastomosis_Proyecto"])){
+	$Tipo_Anastomosis_Proyecto=$_POST["Tipo_Anastomosis_Proyecto"];
+	$Tipo_Anastomosis_Proyecto=strip_tags($Tipo_Anastomosis_Proyecto);
+	$Tipo_Anastomosis_Proyecto=intval($Tipo_Anastomosis_Proyecto);
+	$_SESSION["Tipo_Anastomosis_Proyecto"]=$Tipo_Anastomosis_Proyecto;
 }else{
-	$Anastomosis_coloanal=null;
-	$_SESSION["Anastomosis_coloanal"]=$Anastomosis_coloanal;
+	$Tipo_Anastomosis_Proyecto=null;
+	$_SESSION["Tipo_Anastomosis"]=$Tipo_Anastomosis_Proyecto;
 }
+
+if (isset($_POST["Tipo_Anastomosis_coloanal"])){
+	$Tipo_Anastomosis_coloanal=$_POST["Tipo_Anastomosis_coloanal"];
+	$Tipo_Anastomosis_coloanal=strip_tags($Tipo_Anastomosis_coloanal);
+	$Tipo_Anastomosis_coloanal=intval($Tipo_Anastomosis_coloanal);
+	$_SESSION["Tipo_Anastomosis_coloanal"]=$Tipo_Anastomosis_coloanal;
+}else{
+	$Tipo_Anastomosis_coloanal=null;
+	$_SESSION["Tipo_Anastomosis_coloanal"]=$Tipo_Anastomosis_coloanal;
+}
+
+if (isset($_POST["Reseccion_interesfinteriana"])){
+	$Reseccion_interesfinteriana=$_POST["Reseccion_interesfinteriana"];
+	$Reseccion_interesfinteriana=strip_tags($Reseccion_interesfinteriana);
+	$Reseccion_interesfinteriana=intval($Reseccion_interesfinteriana);
+	$_SESSION["Reseccion_interesfinteriana"]=$Reseccion_interesfinteriana;
+}else{
+	$Reseccion_interesfinteriana=null;
+	$_SESSION["Reseccion_interesfinteriana"]=$Reseccion_interesfinteriana;
+}
+
+
 
 
 if (isset($_POST["Otras_Tecnicas"])){

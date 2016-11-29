@@ -352,8 +352,12 @@ if (!isset($_SESSION["NombreHospital"])){
                                     <input type="checkbox" id="Tecnica" name="Tecnica" value="1"/>
                                 Técnica</label>
                             
-                                <label class="labelCheck" for="Anastomosis_coloanal">
-                                    <input type="checkbox" id="Anastomosis_coloanal" name="Anastomosis_coloanal" value="1"/>
+                                <label class="labelCheck" for="Tipo_Anastomosis_Proyecto">
+                                    <input type="checkbox" id="Tipo_Anastomosis_Proyecto" name="Tipo_Anastomosis_Proyecto" value="1"/>
+                                Tipo Anastomosis Proyecto</label>
+                            
+                                <label class="labelCheck" for="Tipo_Anastomosis_coloanal">
+                                    <input type="checkbox" id="Tipo_Anastomosis_coloanal" name="Tipo_Anastomosis_coloanal" value="1"/>
                                 Anastomosis coloanal</label>
                                 
                                 <label class="labelCheck" for="OtraTecnica">
@@ -367,6 +371,10 @@ if (!isset($_SESSION["NombreHospital"])){
                                 <label class="labelCheck" for="ExeresisMesorrecto">
                                     <input type="checkbox" id="ExeresisMesorrecto" name="ExeresisMesorrecto" value="1"/>
                                 Exéresis mesorrecto</label>
+                            
+                                <label class="labelCheck" for="Reseccion_interesfinteriana">
+                                    <input type="checkbox" id="Reseccion_interesfinteriana" name="Reseccion_interesfinteriana" value="1"/>
+                                Resección interesfinteriana</label>
                                 
                                 <label class="labelCheck" for="OtrasResecciones">
                                     <input type="checkbox" id="OtrasResecciones" name="OtrasResecciones" value="1"/>

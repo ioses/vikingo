@@ -417,7 +417,7 @@
     {
                    
         $sqlSiCirugia="SELECT tabla_cirugia.Fecha_Intervencion, tabla_cirugia.Fecha_Alta, tabla_cirugia.Cirujano, tabla_cirugia.Ayudante, tabla_planificacion.Tipo AS Planificacion, tabla_tecnicas.Tipo AS Tecnicas, tabla_cirugia.B_Otra_Tecnica, tabla_exeresis_meso.Tipo AS Exeresis_Meso, tabla_cirugia.B_Otras_Resecciones,
-		tabla_cirugia.Orientacion AS Orientacion
+		tabla_cirugia.Orientacion AS Orientacion, tabla_cirugia.Tipo_Anastomosis_Proyecto AS Tipo_Anastomosis_Proyecto, tabla_cirugia.Tipo_Anastomosis_coloanal AS Tipo_Anastomosis_coloanal, tabla_cirugia.Reseccion_interesfinteriana AS Reseccion_interesfinteriana
                        FROM tabla_cirugia
                        INNER JOIN tabla_planificacion
                        ON tabla_cirugia.Id_Planificacion = tabla_planificacion.ID
@@ -448,6 +448,12 @@
         
         $Tecnicas_Cirugia = "<dt>Técnica quirúrgica: </dt> <dd>" . utf8_encode($rowSiCirugia['Tecnicas']) . ".</dd>";
        
+        $Tipo_Anastomosis_Proyecto="<dt>Técnica quirúrgica: </dt> <dd>" . utf8_encode($rowSiCirugia['Tipo_Anastomosis_Proyecto']) . ".</dd>";
+        
+        $Tipo_Anastomosis_coloanal="<dt>Técnica quirúrgica: </dt> <dd>" . utf8_encode($rowSiCirugia['Tipo_Anastomosis_coloanal']) . ".</dd>";
+        
+        $Reseccion_interesfinteriana="<dt>Técnica quirúrgica: </dt> <dd>" . utf8_encode($rowSiCirugia['Reseccion_interesfinteriana']) . ".</dd>";
+        
         $B_Otras_Cirugia = "<dt>Otra técnicas cirugía: </dt> <dd>";
         
         if ($rowSiCirugia['B_Otra_Tecnica'] == 1)
