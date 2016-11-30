@@ -45,6 +45,7 @@ $(document).ready(function(){
         document.getElementById('Tipo_Reseccion_interesfinteriana').checked = true;
         document.getElementById('Reseccion_organos_vecinos_proyecto').checked = true;
         document.getElementById('Tipo_Reseccion_organos').checked = true;
+        document.getElementById('Dehiscencia_sutura_proyecto').checked = true;
         document.getElementById('OtraTecnica').checked = true;
         document.getElementById('Orientacion').checked = true;
         document.getElementById('ExeresisMesorrecto').checked = true;
@@ -210,6 +211,7 @@ $(document).ready(function(){
         document.getElementById('Tipo_Reseccion_interesfinteriana').checked = false;
         document.getElementById('Reseccion_organos_vecinos_proyecto').checked = false;
         document.getElementById('Tipo_Reseccion_organos').checked = false;
+        document.getElementById('Dehiscencia_sutura_proyecto').checked = false;
         document.getElementById('OtraTecnica').checked = false;
         document.getElementById('Orientacion').checked = false;
         document.getElementById('ExeresisMesorrecto').checked = false;
@@ -409,6 +411,7 @@ $(document).ready(function(){
         document.getElementById('Tipo_Reseccion_interesfinteriana').checked = true;
         document.getElementById('Reseccion_organos_vecinos_proyecto').checked = true;
         document.getElementById('Tipo_Reseccion_organos').checked = true;
+        document.getElementById('Dehiscencia_sutura_proyecto').checked = true;
         document.getElementById('OtraTecnica').checked = true;
         document.getElementById('Orientacion').checked = true;
         document.getElementById('ExeresisMesorrecto').checked = true;
@@ -444,6 +447,7 @@ $(document).ready(function(){
         document.getElementById('Tipo_Reseccion_interesfinteriana').checked = false;
         document.getElementById('Reseccion_organos_vecinos_proyecto').checked = false;
         document.getElementById('Tipo_Reseccion_organos').checked = false;
+        document.getElementById('Dehiscencia_sutura_proyecto').checked = false;
         document.getElementById('OtraTecnica').checked = false;
         document.getElementById('Orientacion').checked = false;
         

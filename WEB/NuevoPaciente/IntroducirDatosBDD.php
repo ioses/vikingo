@@ -151,6 +151,10 @@
         $Tipo_Reseccion_interesfinteriana=$_SESSION["Tipo_Reseccion_interesfinteriana"];
         $Reseccion_organos_vecinos_proyecto=$_SESSION["Reseccion_organos_vecinos_proyecto"];
         $Tipo_Reseccion_organos=$_SESSION["Tipo_Reseccion_organos"];
+        $Dehiscencia_sutura_proyecto=$_SESSION["Dehiscencia_sutura_proyecto"];
+        
+        echo ("Tipo Reseccion".$Tipo_Reseccion_organos);
+        echo ("Dehis ".$Dehiscencia_sutura_proyecto);
         
         if ($_SESSION["Otra_Tecnica_Cirugia"]!=null){
         $Otra_Tecnica_Cirugia[] = null;
@@ -1743,10 +1747,10 @@ if($B_Cirugia==2){
  	
  
     $sqlTablaCirugia="INSERT INTO tabla_cirugia (Id_Cirugia, Id_Planificacion, Fecha_Intervencion, Fecha_Alta, Cirujano, Ayudante, Id_Tecnica, B_Otra_Tecnica, Orientacion, Id_Exeresis_Meso, B_Otras_Resecciones, Tipo_Anastomosis_Proyecto, Tipo_Anastomosis_coloanal, Reseccion_interesfinteriana, 
-        Tipo_Reseccion_interesfinteriana, Tipo_Reseccion_organos, Reseccion_organos_vecinos_proyecto) 
+        Tipo_Reseccion_interesfinteriana, Tipo_Reseccion_organos, Reseccion_organos_vecinos_proyecto, Dehiscencia_sutura_proyecto) 
                         VALUES ('$Id_Cirugia', '$Tipo_Cirugia', '$Fecha_Intervencion', '$Fecha_Alta', '$Cirujano_Principal', '$Cirujano_Ayudante', '$Tecnica_Cirugia', $Otras_Cirugia, 
 						'$Orientacion', '$Exeresis_Meso', '$Otras_Resecc_Viscerales', '$Tipo_Anastomosis_Proyecto', '$Tipo_Anastomosis_coloanal','$Reseccion_interesfinteriana',"
-            . "         '$Tipo_Reseccion_interesfinteriana', '$Tipo_Reseccion_organos','$Reseccion_organos_vecinos_proyecto')";
+            . "         '$Tipo_Reseccion_interesfinteriana', '$Tipo_Reseccion_organos','$Reseccion_organos_vecinos_proyecto','$Dehiscencia_sutura_proyecto')";
                                        
                 mysqli_query($conexion,$sqlTablaCirugia)
                 or die(header("Location: EliminaPaciente/elimina_paciente.php"));
@@ -3519,6 +3523,7 @@ if($TtoAdy==1){
     $Tipo_Reseccion_interesfinteriana=null;
     $Reseccion_organos_vecinos_proyecto=null;
     $Tipo_Reseccion_organos=null;
+    $Dehiscencia_sutura_proyecto=null;
 	$OtraTecnica=null;
 	$Orientacion=null;
 	$ExeresisMeso=null;
@@ -3606,6 +3611,7 @@ if($TtoAdy==1){
     $Reseccion_interesfinteriana=$rowTablaCirugia[13];
     $Tipo_Reseccion_interesfinteriana=$rowTablaCirugia[14];
     $Tipo_Reseccion_organos=$rowTablaCirugia[15];
+    $Dehiscencia_sutura_proyecto=$rowTablaCirugia[17];
     $Reseccion_organos_vecinos_proyecto=$rowTablaCirugia[16];
 	$ExeresisMeso=intval($rowTablaCirugia[8]);
     $OtrasResecciones=$rowTablaCirugia[9];
@@ -4244,7 +4250,7 @@ $sqlRellenaTablaGeneral="INSERT INTO tabla_general (Hospital, NHC, Recidiva, Fec
 							 TipoRes, Regresion, MesoCal, EstadioPatologico, Comentarios_Adicionales, Orientacion, Transfusiones,
                              ECO, RMN, Dist_Tumor, Dist_Adeno, Integ_Esfinter, Cirujano_Principal, Cirujano_Ayudante, Obstruccion, Tipo_Histologico, Otros_Histologico, Estadio_Tumor_Sincronico,
                              Localizacion_Recidiva, Intervencion_Recidiva, Localizacion_Metastasis, Intervencion_Metastasis, Localizacion_Segundo_Tumor, Intervencion_Segundo_Tumor, Causa_Imposibilidad, Clasificacion_Rullier, 
-                             Tipo_Anastomosis_Proyecto, Tipo_Anastomosis_coloanal,Reseccion_interesfinteriana, Tipo_Reseccion_interesfinteriana, Tipo_Reseccion_organos,Reseccion_organos_vecinos_proyecto) 
+                             Tipo_Anastomosis_Proyecto, Tipo_Anastomosis_coloanal,Reseccion_interesfinteriana, Tipo_Reseccion_interesfinteriana, Tipo_Reseccion_organos,Reseccion_organos_vecinos_proyecto, Dehiscencia_sutura_proyecto) 
 							 VALUES 
 							 ('$Id_Hospital', '$NHC', '$Recidiva', '$FechaRecidiva', '$Metastasis', '$FechaMetastasis', '$Segundo_Tumor', '$FechaSegundoTumor', '$Estado', '$CausaMuerte', '$FechaMuerte', 
 							 '$FechaRevision', '$Imposibilidad', '$MesesSeguimiento', '$FechaNacimiento', '$Sexo', '$Localizacion', '$Sincro', '$EcoT', '$EcoN', '$TAC', '$RmnT', '$RmnN', '$EstadioRadio', 
@@ -4258,7 +4264,8 @@ $sqlRellenaTablaGeneral="INSERT INTO tabla_general (Hospital, NHC, Recidiva, Fec
                               '$ECO', '$RMN', '$RmnDist_Tumor', '$RmnDist_Adeno', '$Integ_Esfinter', 
                             '$CirujanoPrincipal', '$CirujanoAyudante', '$Obstruccion', '$TipoHistologico', '$OtrosHistologico', '$Tumor_Sincronico',
                             '$LocalizacionRecidiva', '$IntervencionRecidiva', '$LocalizacionMetastasis', '$IntervencionMetastasis', 
-                            '$LocalizacionSegundoTumor', '$IntervencionSegundoTumor', '$CausaImposibilidad','$Clasificacion_Rullier','$Tipo_Anastomosis_Proyecto', '$Tipo_Anastomosis_coloanal','$Reseccion_interesfinteriana','$Tipo_Reseccion_interesfinteriana','$Tipo_Reseccion_organos','$Reseccion_organos_vecinos_proyecto')"; 
+                            '$LocalizacionSegundoTumor', '$IntervencionSegundoTumor', '$CausaImposibilidad','$Clasificacion_Rullier','$Tipo_Anastomosis_Proyecto', '$Tipo_Anastomosis_coloanal','$Reseccion_interesfinteriana',"
+        . "                    '$Tipo_Reseccion_interesfinteriana','$Tipo_Reseccion_organos','$Reseccion_organos_vecinos_proyecto','$Dehiscencia_sutura_proyecto')"; 
 
 
 

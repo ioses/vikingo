@@ -159,8 +159,8 @@ if (isset($_POST["Reseccion_organos_vecinos_proyecto"])){
 	$Reseccion_organos_vecinos_proyecto=intval($Reseccion_organos_vecinos_proyecto);
 	$_SESSION["Reseccion_organos_vecinos_proyecto"]=$Reseccion_organos_vecinos_proyecto;
 }else{
-	$Tipo_Reseccion_organos=null;
-	$_SESSION["Tipo_Reseccion_organos"]=$Tipo_Reseccion_organos;
+	$Reseccion_organos_vecinos_proyecto=null;
+	$_SESSION["Reseccion_organos_vecinos_proyecto"]=$Reseccion_organos_vecinos_proyecto;
 }
 
 if (isset($_POST["Tipo_Reseccion_organos"])){
@@ -171,6 +171,17 @@ if (isset($_POST["Tipo_Reseccion_organos"])){
 }else{
 	$Tipo_Reseccion_organos=null;
 	$_SESSION["Tipo_Reseccion_organos"]=$Tipo_Reseccion_organos;
+}
+
+
+if (isset($_POST["Dehiscencia_sutura_proyecto"])){
+	$Dehiscencia_sutura_proyecto=$_POST["Dehiscencia_sutura_proyecto"];
+	$Dehiscencia_sutura_proyecto=strip_tags($Dehiscencia_sutura_proyecto);
+	$Dehiscencia_sutura_proyecto=intval($Dehiscencia_sutura_proyecto);
+	$_SESSION["Dehiscencia_sutura_proyecto"]=$Dehiscencia_sutura_proyecto;
+}else{
+	$Dehiscencia_sutura_proyecto=null;
+	$_SESSION["Dehiscencia_sutura_proyecto"]=$Dehiscencia_sutura_proyecto;
 }
 
 

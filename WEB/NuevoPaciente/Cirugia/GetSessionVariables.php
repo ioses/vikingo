@@ -44,6 +44,7 @@ $a=array(
     "Tipo_Reseccion_interesfinteriana"=>$_SESSION["Tipo_Reseccion_interesfinteriana"],
     "Reseccion_organos_vecinos_proyecto"=>$_SESSION["Reseccion_organos_vecinos_proyecto"],
     "Tipo_Reseccion_organos"=>$_SESSION["Tipo_Reseccion_organos"],
+    "Dehiscencia_sutura_proyecto"=>$_SESSION["Dehiscencia_sutura_proyecto"],
     "Otra_Tecnica_Cirugia"=>$Tecnicas,
 	"Orientacion"=>$_SESSION["Orientacion"],
     "Exeresis_Meso"=>$_SESSION["Exeresis_Meso"],

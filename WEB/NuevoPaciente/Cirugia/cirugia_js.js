@@ -624,6 +624,7 @@ function HabilitaCirugia() {
         document.getElementById("Reseccion_interesfinteriana").disabled = true;
         document.getElementById("Tipo_Reseccion_interesfinteriana").disabled = true;
         document.getElementById("Reseccion_organos_vecinos_proyecto").disabled = true;
+        document.getElementById("Dehiscencia_sutura_proyecto").disabled = true;
         document.getElementById("Tipo_Reseccion_organos").disabled = true;
         document.getElementById("Otras_Tecnicas").disabled = true;
         document.getElementById("Exeresis_Mesorrecto").disabled = true;
@@ -733,6 +734,7 @@ function HabilitaCirugia() {
          document.getElementById("Reseccion_interesfinteriana").disabled = false;
          document.getElementById("Tipo_Reseccion_interesfinteriana").disabled = false;
          document.getElementById("Reseccion_organos_vecinos_proyecto").disabled = false;
+         document.getElementById("Dehiscencia_sutura_proyecto").disabled = false;
          document.getElementById("Tipo_Reseccion_organos").disabled = false;
         document.getElementById("Otras_Tecnicas").disabled = false;
         //document.getElementById("Exeresis_Mesorrecto").disabled = false;
@@ -953,6 +955,8 @@ function CargarDatos() {
                 document.getElementById("Reseccion_organos_vecinos_proyecto").value=data["Reseccion_organos_vecinos_proyecto"];
                 
                   document.getElementById("Tipo_Reseccion_organos").value=data["Tipo_Reseccion_organos"];
+                  
+                  isCheckBoxSelectedAnd0('Dehiscencia_sutura_proyecto', data["Dehiscencia_sutura_proyecto"]);
                
                //var cir = data["Otra_Tecnica_Cirugia"][1] + " " + data["Otra_Tecnica_Cirugia"][2] + " count " + data["Otra_Tecnica_Cirugia"].length + "; ";   
                
@@ -1190,6 +1194,24 @@ function isCheckBoxSelected(idSelect, data)
     {
         //alert("Dato: " + data + " Uncheck: " + idSelect);
         removeCheckBox(idSelect);
+    }
+}
+
+
+function isCheckBoxSelectedAnd0(idSelect, data)
+{
+
+    
+    if (data == null || data == 0)
+    {
+        //alert("Dato: " + data + " Check: " + idSelect);
+        
+        removeCheckBox(idSelect);
+    }
+    else
+    {
+        //alert("Dato: " + data + " Uncheck: " + idSelect);
+        putCheckBox(idSelect);
     }
 }
 

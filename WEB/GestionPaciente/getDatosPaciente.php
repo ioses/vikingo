@@ -418,7 +418,7 @@
                    
         $sqlSiCirugia="SELECT tabla_cirugia.Fecha_Intervencion, tabla_cirugia.Fecha_Alta, tabla_cirugia.Cirujano, tabla_cirugia.Ayudante, tabla_planificacion.Tipo AS Planificacion, tabla_tecnicas.Tipo AS Tecnicas, tabla_cirugia.B_Otra_Tecnica, tabla_exeresis_meso.Tipo AS Exeresis_Meso, tabla_cirugia.B_Otras_Resecciones,
 		tabla_cirugia.Orientacion AS Orientacion, tabla_cirugia.Tipo_Anastomosis_Proyecto AS Tipo_Anastomosis_Proyecto, tabla_cirugia.Tipo_Anastomosis_coloanal AS Tipo_Anastomosis_coloanal, tabla_cirugia.Reseccion_interesfinteriana AS Reseccion_interesfinteriana, tabla_cirugia.Tipo_Reseccion_interesfinteriana AS Tipo_Reseccion_interesfinteriana,
-        tabla_cirugia.Tipo_Reseccion_organos AS Tipo_Reseccion_organos, tabla_cirugia.Reseccion_organos_vecinos_proyecto AS Reseccion_organos_vecinos_proyecto
+        tabla_cirugia.Tipo_Reseccion_organos AS Tipo_Reseccion_organos, tabla_cirugia.Reseccion_organos_vecinos_proyecto AS Reseccion_organos_vecinos_proyecto, tabla_cirugia.Dehiscencia_sutura_proyecto AS Dehiscencia_sutura_proyecto
                        FROM tabla_cirugia
                        INNER JOIN tabla_planificacion
                        ON tabla_cirugia.Id_Planificacion = tabla_planificacion.ID
@@ -460,6 +460,8 @@
         $Reseccion_organos_vecinos_proyecto="<dt>Técnica quirúrgica: </dt> <dd>" . utf8_encode($rowSiCirugia['Reseccion_organos_vecinos_proyecto']) . ".</dd>";
         
         $Tipo_Reseccion_organos="<dt>Técnica quirúrgica: </dt> <dd>" . utf8_encode($rowSiCirugia['Tipo_Reseccion_organos']) . ".</dd>";
+        
+        $Dehiscencia_sutura_proyecto="<dt>Técnica quirúrgica: </dt> <dd>" . utf8_encode($rowSiCirugia['Dehiscencia_sutura_proyecto']) . ".</dd>";
         
         $B_Otras_Cirugia = "<dt>Otra técnicas cirugía: </dt> <dd>";
         

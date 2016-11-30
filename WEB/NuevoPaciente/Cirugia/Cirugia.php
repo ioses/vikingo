@@ -936,7 +936,7 @@ if (!isset($_SESSION["NombreHospital"])){
         if ($Nombre=="HOSPITALPRUEBA" && $loc<7){
        ?>
         <h3>NUEVAS VARIABLES PROYECTO</h3>
-        <div class="hero-unit">
+        <div class="hero-unit" style="background-color: #d59392">
             <div class="row-fluid">
                 <dl class="dl-horizontal-principal">
                     <dt>
@@ -1002,7 +1002,7 @@ if (!isset($_SESSION["NombreHospital"])){
                              </label>
                          </dd>
                          <dt>
-                           <label class="negrita" color="red">Tipo Resección órganos</label>
+                           <label class="negrita" color="red">Tipo Resección órganos   <?php echo("Valor".$_SESSION["Tipo_Reseccion_organos"]);?></label>
                          </dt>
                          <dd>
                             <label for="Tipo_Reseccion_organos">
@@ -1013,7 +1013,13 @@ if (!isset($_SESSION["NombreHospital"])){
                                </select>
                              </label>
                           </dd>          
-                    
+                        <dt>
+                           <label class="negrita" color="red">Dehiscencia sutura<?php echo("Valor".$_SESSION["Dehiscencia_sutura_proyecto"]);?></label>
+                         </dt>
+                         <dd> 
+                                <input type="checkbox" name="Dehiscencia_sutura_proyecto" id="Dehiscencia_sutura_proyecto" value="1"/>
+                          </dd>     
+                          
                 </dl>
             </div> 
         </div>

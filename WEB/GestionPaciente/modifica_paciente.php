@@ -78,6 +78,7 @@
     $_SESSION["Tipo_Reseccion_interesfinteriana"] = null;
     $_SESSION["Reseccion_organos_vecinos_proyecto"] = null;
     $_SESSION["Tipo_Reseccion_organos"] = null;
+    $_SESSION["Dehiscencia_sutura_proyecto"] = null;
     $_SESSION["Otra_Tecnica_Cirugia"] = null;
 	$_SESSION["Orientacion"] = null;
     $_SESSION["Exeresis_Meso"] = null;
@@ -555,6 +556,7 @@
         $_SESSION["Tipo_Reseccion_interesfinteriana"] = intval($rowSiCirugia['Tipo_Reseccion_interesfinteriana']);
          $_SESSION["Reseccion_organos_vecinos_proyecto"] = intval($rowSiCirugia['Reseccion_organos_vecinos_proyecto']);
          $_SESSION["Tipo_Reseccion_organos"] = intval($rowSiCirugia['Tipo_Reseccion_organos']);
+         $_SESSION["Dehiscencia_sutura_proyecto"] = intval($rowSiCirugia['Dehiscencia_sutura_proyecto']);
         $_SESSION["Otra_Tecnica_Cirugia"] = null;
         
         /*if ($rowSiCirugia['Id_Otra_Tecnica'] != null)

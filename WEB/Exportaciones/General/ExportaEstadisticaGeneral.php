@@ -600,6 +600,12 @@ if ($_POST["Tipo_Reseccion_organos"] == 1)
     echo "<th>Tipo_Reseccion_organos</th>";
 }
 
+if ($_POST["Dehiscencia_sutura_proyecto"] == 1)
+{
+    echo "<th>Dehiscencia_sutura_proyecto</th>";
+}
+
+
 
 echo "</tr> ";
 
@@ -1814,6 +1820,13 @@ if ($_POST["Tipo_Reseccion_organos"] == 1)
 {	
     echo "<td>".$row["Tipo_Reseccion_organos"]."</td> ";
 } 
+
+if ($_POST["Dehiscencia_sutura_proyecto"] == 1)
+{	
+    echo "<td>".$row["Dehiscencia_sutura_proyecto"]."</td> ";
+} 
+
+
 
 
 	
