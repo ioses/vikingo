@@ -1002,7 +1002,7 @@ if (!isset($_SESSION["NombreHospital"])){
                              </label>
                          </dd>
                          <dt>
-                           <label class="negrita" color="red">Tipo Resección órganos   <?php echo("Valor".$_SESSION["Tipo_Reseccion_organos"]);?></label>
+                           <label class="negrita" color="red">Tipo Resección órganos</label>
                          </dt>
                          <dd>
                             <label for="Tipo_Reseccion_organos">
@@ -1012,13 +1012,53 @@ if (!isset($_SESSION["NombreHospital"])){
                                   <option value="2">Total</option>
                                </select>
                              </label>
-                          </dd>          
+                          </dd>   
+                            <dt>
+                                <label class="negrita">Órganos</label>
+                            </dt>
+                               <dd>
+                                 <dl class="dl-horizontal-secundario-mediano-checkbox">
+                                     <dt>
+                                    
+                                       <label for="Reseccion_organo_vagina">
+                                         <input type="checkbox" name="Reseccion_organo_vagina" value="1" id="Reseccion_organo_vagina" />
+                                         Vagina</label>
+                                            
+                                        <label for="Reseccion_organo_utero">
+                                          <input type="checkbox" name="Reseccion_organo_utero" value="1" id="Reseccion_organo_utero"/>
+                                         Útero</label>
+                                  
+                                        <label for="Reseccion_organo_vejiga">
+                                          <input type="checkbox" name="Reseccion_organo_vejiga" value="1" id="Reseccion_organo_vejiga"/>
+                                         Vejiga</label>
+                                     </dt>       
+                                    
+                                <dd>
+                                            
+                                            
+                                 <label class="negrita" for="Reseccion_organo_prostata">
+                                    <input type="checkbox" name="Reseccion_organo_prostata" value="1" id="Reseccion_organo_prostata" />
+                                  Próstata</label>
+                                            
+                                 <label class="negrita" for="Reseccion_organo_seminales">
+                                     <input type="checkbox" name="Reseccion_organo_seminales" value="1" id="Reseccion_organo_seminales"/>
+                                  Seminales</label>
+                                                    
+                               </dd>
+                              </dl>
+                           </dd>
                         <dt>
-                           <label class="negrita" color="red">Dehiscencia sutura<?php echo("Valor".$_SESSION["Dehiscencia_sutura_proyecto"]);?></label>
+                           <label class="negrita">Dehiscencia sutura</label>
                          </dt>
                          <dd> 
                                 <input type="checkbox" name="Dehiscencia_sutura_proyecto" id="Dehiscencia_sutura_proyecto" value="1"/>
-                          </dd>     
+                          </dd>  
+                        <dt>
+                           <label class="negrita" color="red">Absceso pélvico</label>
+                         </dt>
+                         <dd> 
+                                <input type="checkbox" name="Absceso_pelvico_proyecto" id="Absceso_pelvico_proyecto" value="1"/>
+                          </dd>      
                           
                 </dl>
             </div> 
@@ -1032,6 +1072,9 @@ if (!isset($_SESSION["NombreHospital"])){
           <input type="hidden" id="Reseccion_interesfinteriana" value="0"/>
           <input type="hidden" id="Tipo_Reseccion_interesfinteriana" value="0"/>
           <input type="hidden" id="Tipo_Reseccion_organos" value="0"/>
+          <input type="hidden" id="Dehiscencia_sutura_proyecto" value="0"/>
+          <input type="hidden" id="Reseccion_organos_vecinos_proyecto" value="0"/>
+          <input type="hidden" id="Absceso_pelvico_proyecto" value="0"/>
         <?php
          }
          ?>   

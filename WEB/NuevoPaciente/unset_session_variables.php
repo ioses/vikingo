@@ -289,6 +289,15 @@ if (isset($_SESSION["Reseccion_organos_vecinos_proyecto"])){
 if (isset($_SESSION["Tipo_Reseccion_organos"])){
     unset($_SESSION["Tipo_Reseccion_organos"]); 
 }
+
+if (isset($_SESSION["Dehiscencia_sutura_proyecto"])){
+    unset($_SESSION["Dehiscencia_sutura_proyecto"]); 
+}
+	
+if (isset($_SESSION["Absceso_pelvico_proyecto"])){
+    unset($_SESSION["Absceso_pelvico_proyecto"]); 
+}
+	
 	
 				
 if (isset($_SESSION["Orientacion"])){

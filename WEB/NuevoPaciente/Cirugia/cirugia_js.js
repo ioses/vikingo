@@ -957,6 +957,14 @@ function CargarDatos() {
                   document.getElementById("Tipo_Reseccion_organos").value=data["Tipo_Reseccion_organos"];
                   
                   isCheckBoxSelectedAnd0('Dehiscencia_sutura_proyecto', data["Dehiscencia_sutura_proyecto"]);
+                  
+                   isCheckBoxSelectedAnd0('Absceso_pelvico_proyecto', data["Absceso_pelvico_proyecto"]);
+                   
+                    isCheckBoxSelectedAnd0('Reseccion_organo_vagina', data["Reseccion_organo_vagina"]);
+                    isCheckBoxSelectedAnd0('Reseccion_organo_prostata', data["Reseccion_organo_prostata"]);
+                    isCheckBoxSelectedAnd0('Reseccion_organo_vejiga', data["Reseccion_organo_vejiga"]);
+                    isCheckBoxSelectedAnd0('Reseccion_organo_seminales', data["Reseccion_organo_seminales"]);
+                    isCheckBoxSelectedAnd0('Reseccion_organo_utero', data["Reseccion_organo_utero"]);
                
                //var cir = data["Otra_Tecnica_Cirugia"][1] + " " + data["Otra_Tecnica_Cirugia"][2] + " count " + data["Otra_Tecnica_Cirugia"].length + "; ";   
                

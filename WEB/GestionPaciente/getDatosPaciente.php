@@ -418,7 +418,8 @@
                    
         $sqlSiCirugia="SELECT tabla_cirugia.Fecha_Intervencion, tabla_cirugia.Fecha_Alta, tabla_cirugia.Cirujano, tabla_cirugia.Ayudante, tabla_planificacion.Tipo AS Planificacion, tabla_tecnicas.Tipo AS Tecnicas, tabla_cirugia.B_Otra_Tecnica, tabla_exeresis_meso.Tipo AS Exeresis_Meso, tabla_cirugia.B_Otras_Resecciones,
 		tabla_cirugia.Orientacion AS Orientacion, tabla_cirugia.Tipo_Anastomosis_Proyecto AS Tipo_Anastomosis_Proyecto, tabla_cirugia.Tipo_Anastomosis_coloanal AS Tipo_Anastomosis_coloanal, tabla_cirugia.Reseccion_interesfinteriana AS Reseccion_interesfinteriana, tabla_cirugia.Tipo_Reseccion_interesfinteriana AS Tipo_Reseccion_interesfinteriana,
-        tabla_cirugia.Tipo_Reseccion_organos AS Tipo_Reseccion_organos, tabla_cirugia.Reseccion_organos_vecinos_proyecto AS Reseccion_organos_vecinos_proyecto, tabla_cirugia.Dehiscencia_sutura_proyecto AS Dehiscencia_sutura_proyecto
+        tabla_cirugia.Tipo_Reseccion_organos AS Tipo_Reseccion_organos, tabla_cirugia.Reseccion_organos_vecinos_proyecto AS Reseccion_organos_vecinos_proyecto, tabla_cirugia.Dehiscencia_sutura_proyecto AS Dehiscencia_sutura_proyecto, tabla_cirugia.Absceso_pelvico_proyecto AS Absceso_pelvico_proyecto, 
+        tabla_cirugia.Reseccion_organo_vagina AS Reseccion_organo_vagina, tabla_cirugia.Reseccion_organo_prostata AS Reseccion_organo_prostata, tabla_cirugia.Reseccion_organo_vejiga AS Reseccion_organo_vejiga, tabla_cirugia.Reseccion_organo_seminales AS Reseccion_organo_seminales, tabla_cirugia.Reseccion_organo_utero AS Reseccion_organo_utero
                        FROM tabla_cirugia
                        INNER JOIN tabla_planificacion
                        ON tabla_cirugia.Id_Planificacion = tabla_planificacion.ID
@@ -462,6 +463,21 @@
         $Tipo_Reseccion_organos="<dt>Técnica quirúrgica: </dt> <dd>" . utf8_encode($rowSiCirugia['Tipo_Reseccion_organos']) . ".</dd>";
         
         $Dehiscencia_sutura_proyecto="<dt>Técnica quirúrgica: </dt> <dd>" . utf8_encode($rowSiCirugia['Dehiscencia_sutura_proyecto']) . ".</dd>";
+        
+         $Absceso_pelvico_proyecto="<dt>Técnica quirúrgica: </dt> <dd>" . utf8_encode($rowSiCirugia['Absceso_pelvico_proyecto']) . ".</dd>";
+         
+         
+          $Reseccion_organo_vagina="<dt>Técnica quirúrgica: </dt> <dd>" . utf8_encode($rowSiCirugia['Reseccion_organo_vagina']) . ".</dd>";
+          
+           $Reseccion_organo_prostata="<dt>Técnica quirúrgica: </dt> <dd>" . utf8_encode($rowSiCirugia['Reseccion_organo_prostata']) . ".</dd>";
+           
+            $Reseccion_organo_vejiga="<dt>Técnica quirúrgica: </dt> <dd>" . utf8_encode($rowSiCirugia['Reseccion_organo_vejiga']) . ".</dd>";
+            
+             $Reseccion_organo_seminales="<dt>Técnica quirúrgica: </dt> <dd>" . utf8_encode($rowSiCirugia['Reseccion_organo_seminales']) . ".</dd>";
+             
+              $Reseccion_organo_utero="<dt>Técnica quirúrgica: </dt> <dd>" . utf8_encode($rowSiCirugia['Reseccion_organo_utero']) . ".</dd>";
+              
+              
         
         $B_Otras_Cirugia = "<dt>Otra técnicas cirugía: </dt> <dd>";
         

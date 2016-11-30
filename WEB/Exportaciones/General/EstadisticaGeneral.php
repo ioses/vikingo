@@ -386,11 +386,37 @@ if (!isset($_SESSION["NombreHospital"])){
                             
                                 <label class="labelCheck" for="Tipo_Reseccion_organos">
                                     <input type="checkbox" id="Tipo_Reseccion_organos" name="Tipo_Reseccion_organos" value="1"/>
-                                Tipo Resección órganos</label>    
+                                Tipo Resección órganos</label> 
+                            
+                                <label class="labelCheck" for="Reseccion_organo_vagina">
+                                    <input type="checkbox" id="Reseccion_organo_vagina" name="Reseccion_organo_vagina" value="1"/>
+                                Resección vagina</label>    
+                            
+                            <label class="labelCheck" for="Reseccion_organo_prostata">
+                                    <input type="checkbox" id="Reseccion_organo_prostata" name="Reseccion_organo_prostata" value="1"/>
+                                Resección próstata</label>    
+                            
+                            <label class="labelCheck" for="Reseccion_organo_seminales">
+                                    <input type="checkbox" id="Reseccion_organo_seminales" name="Reseccion_organo_seminales" value="1"/>
+                                 Resección seminales </label>    
+                            
+                            <label class="labelCheck" for="Reseccion_organo_vejiga">
+                                    <input type="checkbox" id="Reseccion_organo_vejiga" name="Reseccion_organo_vejiga" value="1"/>
+                                Resección vejiga</label>    
+                            
+                            <label class="labelCheck" for="Reseccion_organo_utero">
+                                    <input type="checkbox" id="Reseccion_organo_utero" name="Reseccion_organo_utero" value="1"/>
+                                Resección útero</label>    
+                            
+                            
                             
                             
                             <label class="labelCheck" for="Dehiscencia_sutura_proyecto">
                                     <input type="checkbox" id="Dehiscencia_sutura_proyecto" name="Dehiscencia_sutura_proyecto" value="1"/>
+                                Dehiscencia sutura proyecto</label> 
+                            
+                            <label class="labelCheck" for="Absceso_pelvico_proyecto">
+                                    <input type="checkbox" id="Absceso_pelvico_proyecto" name="Absceso_pelvico_proyecto" value="1"/>
                                 Dehiscencia sutura proyecto</label> 
                                 
                                 <label class="labelCheck" for="OtrasResecciones">

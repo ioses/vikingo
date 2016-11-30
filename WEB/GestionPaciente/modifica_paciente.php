@@ -79,6 +79,13 @@
     $_SESSION["Reseccion_organos_vecinos_proyecto"] = null;
     $_SESSION["Tipo_Reseccion_organos"] = null;
     $_SESSION["Dehiscencia_sutura_proyecto"] = null;
+    $_SESSION["Absceso_pelvico_proyecto"] = null;
+    $_SESSION["Reseccion_organo_vagina"] = null;
+    $_SESSION["Reseccion_organo_prostata"] = null;
+    $_SESSION["Reseccion_organo_vejiga"] = null;
+    $_SESSION["Reseccion_organo_seminales"] = null;
+    $_SESSION["Reseccion_organo_utero"] = null;
+    
     $_SESSION["Otra_Tecnica_Cirugia"] = null;
 	$_SESSION["Orientacion"] = null;
     $_SESSION["Exeresis_Meso"] = null;
@@ -557,6 +564,13 @@
          $_SESSION["Reseccion_organos_vecinos_proyecto"] = intval($rowSiCirugia['Reseccion_organos_vecinos_proyecto']);
          $_SESSION["Tipo_Reseccion_organos"] = intval($rowSiCirugia['Tipo_Reseccion_organos']);
          $_SESSION["Dehiscencia_sutura_proyecto"] = intval($rowSiCirugia['Dehiscencia_sutura_proyecto']);
+         $_SESSION["Absceso_pelvico_proyecto"] = intval($rowSiCirugia['Absceso_pelvico_proyecto']);
+         $_SESSION["Reseccion_organo_vagina"] = intval($rowSiCirugia['Reseccion_organo_vagina']);
+         $_SESSION["Reseccion_organo_prostata"] = intval($rowSiCirugia['Reseccion_organo_prostata']);
+         $_SESSION["Reseccion_organo_vejiga"] = intval($rowSiCirugia['Reseccion_organo_vejiga']);
+         $_SESSION["Reseccion_organo_seminales"] = intval($rowSiCirugia['Reseccion_organo_seminales']);
+         $_SESSION["Reseccion_organo_utero"] = intval($rowSiCirugia['Reseccion_organo_utero']);
+         
         $_SESSION["Otra_Tecnica_Cirugia"] = null;
         
         /*if ($rowSiCirugia['Id_Otra_Tecnica'] != null)

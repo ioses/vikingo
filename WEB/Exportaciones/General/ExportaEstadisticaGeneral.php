@@ -600,9 +600,40 @@ if ($_POST["Tipo_Reseccion_organos"] == 1)
     echo "<th>Tipo_Reseccion_organos</th>";
 }
 
+if ($_POST["Reseccion_organo_vagina"] == 1)
+{
+    echo "<th>Reseccion_organo_vagina</th>";
+}
+if ($_POST["Reseccion_organo_prostata"] == 1)
+{
+    echo "<th>Reseccion_organo_prostata</th>";
+}
+if ($_POST["Reseccion_organo_vejiga"] == 1)
+{
+    echo "<th>Reseccion_organo_vejiga</th>";
+}
+if ($_POST["Reseccion_organo_seminales"] == 1)
+{
+    echo "<th>Reseccion_organo_seminales</th>";
+}
+if ($_POST["Reseccion_organo_utero"] == 1)
+{
+    echo "<th>Reseccion_organo_utero</th>";
+}
+
+
+
+
+
+
 if ($_POST["Dehiscencia_sutura_proyecto"] == 1)
 {
     echo "<th>Dehiscencia_sutura_proyecto</th>";
+}
+
+if ($_POST["Absceso_pelvico_proyecto"] == 1)
+{
+    echo "<th>Absceso_pelvico_proyecto</th>";
 }
 
 
@@ -1821,10 +1852,46 @@ if ($_POST["Tipo_Reseccion_organos"] == 1)
     echo "<td>".$row["Tipo_Reseccion_organos"]."</td> ";
 } 
 
+
+if ($_POST["Reseccion_organo_vagina"] == 1)
+{	
+    echo "<td>".$row["Reseccion_organo_vagina"]."</td> ";
+} 
+
+if ($_POST["Reseccion_organo_prostata"] == 1)
+{	
+    echo "<td>".$row["Reseccion_organo_prostata"]."</td> ";
+} 
+
+if ($_POST["Reseccion_organo_vejiga"] == 1)
+{	
+    echo "<td>".$row["Reseccion_organo_vejiga"]."</td> ";
+} 
+
+if ($_POST["Reseccion_organo_seminales"] == 1)
+{	
+    echo "<td>".$row["Reseccion_organo_seminales"]."</td> ";
+} 
+
+if ($_POST["Reseccion_organo_utero"] == 1)
+{	
+    echo "<td>".$row["Reseccion_organo_utero"]."</td> ";
+} 
+
+
+
+
+
+
 if ($_POST["Dehiscencia_sutura_proyecto"] == 1)
 {	
     echo "<td>".$row["Dehiscencia_sutura_proyecto"]."</td> ";
 } 
+
+if ($_POST["Absceso_pelvico_proyecto"] == 1)
+{	
+    echo "<td>".$row["Absceso_pelvico_proyecto"]."</td> ";
+}
 
 
 

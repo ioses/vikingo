@@ -152,9 +152,15 @@
         $Reseccion_organos_vecinos_proyecto=$_SESSION["Reseccion_organos_vecinos_proyecto"];
         $Tipo_Reseccion_organos=$_SESSION["Tipo_Reseccion_organos"];
         $Dehiscencia_sutura_proyecto=$_SESSION["Dehiscencia_sutura_proyecto"];
+        $Absceso_pelvico_proyecto=$_SESSION["Absceso_pelvico_proyecto"];
         
-        echo ("Tipo Reseccion".$Tipo_Reseccion_organos);
-        echo ("Dehis ".$Dehiscencia_sutura_proyecto);
+        $Reseccion_organo_vagina=$_SESSION["Reseccion_organo_vagina"];
+        $Reseccion_organo_prostata=$_SESSION["Reseccion_organo_prostata"];
+        $Reseccion_organo_vejiga=$_SESSION["Reseccion_organo_vejiga"];
+        $Reseccion_organo_seminales=$_SESSION["Reseccion_organo_seminales"];
+        $Reseccion_organo_utero=$_SESSION["Reseccion_organo_utero"];
+        
+
         
         if ($_SESSION["Otra_Tecnica_Cirugia"]!=null){
         $Otra_Tecnica_Cirugia[] = null;
@@ -1747,10 +1753,11 @@ if($B_Cirugia==2){
  	
  
     $sqlTablaCirugia="INSERT INTO tabla_cirugia (Id_Cirugia, Id_Planificacion, Fecha_Intervencion, Fecha_Alta, Cirujano, Ayudante, Id_Tecnica, B_Otra_Tecnica, Orientacion, Id_Exeresis_Meso, B_Otras_Resecciones, Tipo_Anastomosis_Proyecto, Tipo_Anastomosis_coloanal, Reseccion_interesfinteriana, 
-        Tipo_Reseccion_interesfinteriana, Tipo_Reseccion_organos, Reseccion_organos_vecinos_proyecto, Dehiscencia_sutura_proyecto) 
+        Tipo_Reseccion_interesfinteriana, Tipo_Reseccion_organos, Reseccion_organos_vecinos_proyecto, Dehiscencia_sutura_proyecto, Absceso_pelvico_proyecto, 
+        Reseccion_organo_vagina, Reseccion_organo_prostata, Reseccion_organo_vejiga, Reseccion_organo_seminales, Reseccion_organo_utero) 
                         VALUES ('$Id_Cirugia', '$Tipo_Cirugia', '$Fecha_Intervencion', '$Fecha_Alta', '$Cirujano_Principal', '$Cirujano_Ayudante', '$Tecnica_Cirugia', $Otras_Cirugia, 
 						'$Orientacion', '$Exeresis_Meso', '$Otras_Resecc_Viscerales', '$Tipo_Anastomosis_Proyecto', '$Tipo_Anastomosis_coloanal','$Reseccion_interesfinteriana',"
-            . "         '$Tipo_Reseccion_interesfinteriana', '$Tipo_Reseccion_organos','$Reseccion_organos_vecinos_proyecto','$Dehiscencia_sutura_proyecto')";
+            . "         '$Tipo_Reseccion_interesfinteriana', '$Tipo_Reseccion_organos','$Reseccion_organos_vecinos_proyecto','$Dehiscencia_sutura_proyecto','$Absceso_pelvico_proyecto','$Reseccion_organo_vagina','$Reseccion_organo_prostata','$Reseccion_organo_vejiga','$Reseccion_organo_seminales','$Reseccion_organo_utero')";
                                        
                 mysqli_query($conexion,$sqlTablaCirugia)
                 or die(header("Location: EliminaPaciente/elimina_paciente.php"));
@@ -3524,6 +3531,12 @@ if($TtoAdy==1){
     $Reseccion_organos_vecinos_proyecto=null;
     $Tipo_Reseccion_organos=null;
     $Dehiscencia_sutura_proyecto=null;
+    $Absceso_pelvico_proyecto= null;
+    $Reseccion_organo_vagina= null;
+    $Reseccion_organo_prostata= null;
+    $Reseccion_organo_vejiga= null;
+    $Reseccion_organo_seminales= null;
+    $Reseccion_organo_utero= null;
 	$OtraTecnica=null;
 	$Orientacion=null;
 	$ExeresisMeso=null;
@@ -3612,6 +3625,12 @@ if($TtoAdy==1){
     $Tipo_Reseccion_interesfinteriana=$rowTablaCirugia[14];
     $Tipo_Reseccion_organos=$rowTablaCirugia[15];
     $Dehiscencia_sutura_proyecto=$rowTablaCirugia[17];
+    $Absceso_pelvico_proyecto=$rowTablaCirugia[18];
+    $Reseccion_organo_vagina=$rowTablaCirugia[19];
+    $Reseccion_organo_prostata=$rowTablaCirugia[20];
+    $Reseccion_organo_vejiga=$rowTablaCirugia[21];
+    $Reseccion_organo_seminales=$rowTablaCirugia[22];
+    $Reseccion_organo_utero=$rowTablaCirugia[23];
     $Reseccion_organos_vecinos_proyecto=$rowTablaCirugia[16];
 	$ExeresisMeso=intval($rowTablaCirugia[8]);
     $OtrasResecciones=$rowTablaCirugia[9];
@@ -4250,7 +4269,8 @@ $sqlRellenaTablaGeneral="INSERT INTO tabla_general (Hospital, NHC, Recidiva, Fec
 							 TipoRes, Regresion, MesoCal, EstadioPatologico, Comentarios_Adicionales, Orientacion, Transfusiones,
                              ECO, RMN, Dist_Tumor, Dist_Adeno, Integ_Esfinter, Cirujano_Principal, Cirujano_Ayudante, Obstruccion, Tipo_Histologico, Otros_Histologico, Estadio_Tumor_Sincronico,
                              Localizacion_Recidiva, Intervencion_Recidiva, Localizacion_Metastasis, Intervencion_Metastasis, Localizacion_Segundo_Tumor, Intervencion_Segundo_Tumor, Causa_Imposibilidad, Clasificacion_Rullier, 
-                             Tipo_Anastomosis_Proyecto, Tipo_Anastomosis_coloanal,Reseccion_interesfinteriana, Tipo_Reseccion_interesfinteriana, Tipo_Reseccion_organos,Reseccion_organos_vecinos_proyecto, Dehiscencia_sutura_proyecto) 
+                             Tipo_Anastomosis_Proyecto, Tipo_Anastomosis_coloanal,Reseccion_interesfinteriana, Tipo_Reseccion_interesfinteriana, Tipo_Reseccion_organos,Reseccion_organos_vecinos_proyecto, Dehiscencia_sutura_proyecto, Absceso_pelvico_proyecto, 
+                             Reseccion_organo_vagina, Reseccion_organo_prostata, Reseccion_organo_vejiga, Reseccion_organo_seminales, Reseccion_organo_utero) 
 							 VALUES 
 							 ('$Id_Hospital', '$NHC', '$Recidiva', '$FechaRecidiva', '$Metastasis', '$FechaMetastasis', '$Segundo_Tumor', '$FechaSegundoTumor', '$Estado', '$CausaMuerte', '$FechaMuerte', 
 							 '$FechaRevision', '$Imposibilidad', '$MesesSeguimiento', '$FechaNacimiento', '$Sexo', '$Localizacion', '$Sincro', '$EcoT', '$EcoN', '$TAC', '$RmnT', '$RmnN', '$EstadioRadio', 
@@ -4265,7 +4285,7 @@ $sqlRellenaTablaGeneral="INSERT INTO tabla_general (Hospital, NHC, Recidiva, Fec
                             '$CirujanoPrincipal', '$CirujanoAyudante', '$Obstruccion', '$TipoHistologico', '$OtrosHistologico', '$Tumor_Sincronico',
                             '$LocalizacionRecidiva', '$IntervencionRecidiva', '$LocalizacionMetastasis', '$IntervencionMetastasis', 
                             '$LocalizacionSegundoTumor', '$IntervencionSegundoTumor', '$CausaImposibilidad','$Clasificacion_Rullier','$Tipo_Anastomosis_Proyecto', '$Tipo_Anastomosis_coloanal','$Reseccion_interesfinteriana',"
-        . "                    '$Tipo_Reseccion_interesfinteriana','$Tipo_Reseccion_organos','$Reseccion_organos_vecinos_proyecto','$Dehiscencia_sutura_proyecto')"; 
+        . "                    '$Tipo_Reseccion_interesfinteriana','$Tipo_Reseccion_organos','$Reseccion_organos_vecinos_proyecto','$Dehiscencia_sutura_proyecto','$Absceso_pelvico_proyecto','$Reseccion_organo_vagina','$Reseccion_organo_prostata','$Reseccion_organo_vejiga','$Reseccion_organo_seminales','$Reseccion_organo_utero')"; 
 
 
 

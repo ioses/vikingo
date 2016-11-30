@@ -184,6 +184,69 @@ if (isset($_POST["Dehiscencia_sutura_proyecto"])){
 	$_SESSION["Dehiscencia_sutura_proyecto"]=$Dehiscencia_sutura_proyecto;
 }
 
+if (isset($_POST["Absceso_pelvico_proyecto"])){
+	$Absceso_pelvico_proyecto=$_POST["Absceso_pelvico_proyecto"];
+	$Absceso_pelvico_proyecto=strip_tags($Absceso_pelvico_proyecto);
+	$Absceso_pelvico_proyecto=intval($Absceso_pelvico_proyecto);
+	$_SESSION["Absceso_pelvico_proyecto"]=$Absceso_pelvico_proyecto;
+}else{
+	$Absceso_pelvico_proyecto=null;
+	$_SESSION["Absceso_pelvico_proyecto"]=$Absceso_pelvico_proyecto;
+}
+
+
+
+if (isset($_POST["Reseccion_organo_vagina"])){
+	$Reseccion_organo_vagina=$_POST["Reseccion_organo_vagina"];
+	$Reseccion_organo_vagina=strip_tags($Reseccion_organo_vagina);
+	$Reseccion_organo_vagina=intval($Reseccion_organo_vagina);
+	$_SESSION["Reseccion_organo_vagina"]=$Reseccion_organo_vagina;
+}else{
+	$Reseccion_organo_vagina=null;
+	$_SESSION["Reseccion_organo_vagina"]=$Reseccion_organo_vagina;
+}
+
+if (isset($_POST["Reseccion_organo_prostata"])){
+	$Reseccion_organo_prostata=$_POST["Reseccion_organo_prostata"];
+	$Reseccion_organo_prostata=strip_tags($Reseccion_organo_prostata);
+	$Reseccion_organo_prostata=intval($Reseccion_organo_prostata);
+	$_SESSION["Reseccion_organo_prostata"]=$Reseccion_organo_prostata;
+}else{
+	$Reseccion_organo_prostata=null;
+	$_SESSION["Reseccion_organo_prostata"]=$Reseccion_organo_prostata;
+}
+
+if (isset($_POST["Reseccion_organo_vejiga"])){
+	$Reseccion_organo_vejiga=$_POST["Reseccion_organo_vejiga"];
+	$Reseccion_organo_vejiga=strip_tags($Reseccion_organo_vejiga);
+	$Reseccion_organo_vejiga=intval($Reseccion_organo_vejiga);
+	$_SESSION["Reseccion_organo_vejiga"]=$Reseccion_organo_vejiga;
+}else{
+	$Reseccion_organo_vejiga=null;
+	$_SESSION["Reseccion_organo_vejiga"]=$Reseccion_organo_vejiga;
+}
+
+if (isset($_POST["Reseccion_organo_seminales"])){
+	$Reseccion_organo_seminales=$_POST["Reseccion_organo_seminales"];
+	$Reseccion_organo_seminales=strip_tags($Reseccion_organo_seminales);
+	$Reseccion_organo_seminales=intval($Reseccion_organo_seminales);
+	$_SESSION["Reseccion_organo_seminales"]=$Reseccion_organo_seminales;
+}else{
+	$Reseccion_organo_seminales=null;
+	$_SESSION["Reseccion_organo_seminales"]=$Reseccion_organo_seminales;
+}
+
+if (isset($_POST["Reseccion_organo_utero"])){
+	$Reseccion_organo_utero=$_POST["Reseccion_organo_utero"];
+	$Reseccion_organo_utero=strip_tags($Reseccion_organo_utero);
+	$Reseccion_organo_utero=intval($Reseccion_organo_utero);
+	$_SESSION["Reseccion_organo_utero"]=$Reseccion_organo_utero;
+}else{
+	$Reseccion_organo_utero=null;
+	$_SESSION["Reseccion_organo_utero"]=$Reseccion_organo_utero;
+}
+
+
 
 
 
