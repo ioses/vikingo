@@ -200,8 +200,8 @@ if (!isset($_SESSION["NombreHospital"])){
                             if ($Nombre=="HOSPITALPRUEBA"){
                               
                             ?>
-                            <dt>
-                                <label class="margen">Clasificación Rullier</label>
+                            <dt style="background-color: #d59392">
+                                <label class="margen" style="background-color: #d59392">Clasificación Rullier</label>
                             </dt>
                             <dd>
                                 <label for="Clasificacion_Rullier">

@@ -801,6 +801,20 @@ if (!isset($_SESSION["NombreHospital"])){
                                 <label class="labelCheck" for="Intervencion_Recidiva">
                                     <input type="checkbox" id="Intervencion_Recidiva" name="Intervencion_Recidiva" value="1"/>
                                 Intervención recidiva</label>
+                            
+                                
+                            
+                                <label class="labelCheck" for="Tratamiento_recidiva_local">
+                                    <input type="checkbox" id="Tratamiento_recidiva_local" name="Tratamiento_recidiva_local" value="1"/>
+                                Tratamiento recidiva local</label>
+                            
+                                 <label class="labelCheck" for="Cirugia_recidiva_curativa">
+                                    <input type="checkbox" id="Cirugia_recidiva_curativa" name="Cirugia_recidiva_curativa" value="1"/>
+                                Cirugía recidiva curativa</label>                           
+                            
+                                
+                            
+                            
                                 
                                 <label class="labelCheck" for="Metastasis">
                                     <input type="checkbox" id="Metastasis" name="Metastasis" value="1"/>

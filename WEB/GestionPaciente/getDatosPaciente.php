@@ -1148,6 +1148,9 @@
        $Fecha_Recidiva = "<em>Fecha recidiva: </em>" . $rowRecidiva["Fecha_Recidiva"];
        $Localizacion_Recidiva = "<em>Localización: </em>" . utf8_encode($rowRecidiva["Tipo"]) . ".";
        
+       $Tratamiento_recidiva_local=["Tratamiento_recidiva_local"];
+       $Cirugia_recidiva_curativa=$rowRecidiva["Cirugia_recidiva_curativa"];
+       
        if (intval($rowRecidiva["Intervencion"]) == 1)
        {
            $Intervencion_Recidiva = "<em>Intervención: </em>Se ha intervenido.";

@@ -621,11 +621,6 @@ if ($_POST["Reseccion_organo_utero"] == 1)
     echo "<th>Reseccion_organo_utero</th>";
 }
 
-
-
-
-
-
 if ($_POST["Dehiscencia_sutura_proyecto"] == 1)
 {
     echo "<th>Dehiscencia_sutura_proyecto</th>";
@@ -634,6 +629,16 @@ if ($_POST["Dehiscencia_sutura_proyecto"] == 1)
 if ($_POST["Absceso_pelvico_proyecto"] == 1)
 {
     echo "<th>Absceso_pelvico_proyecto</th>";
+}
+
+if ($_POST["Tratamiento_recidiva_local"] == 1)
+{
+    echo "<th>Tratamiento_recidiva_local</th>";
+}
+
+if ($_POST["Cirugia_recidiva_curativa"] == 1)
+{
+    echo "<th>Cirugia_recidiva_curativa</th>";
 }
 
 
@@ -1891,6 +1896,16 @@ if ($_POST["Dehiscencia_sutura_proyecto"] == 1)
 if ($_POST["Absceso_pelvico_proyecto"] == 1)
 {	
     echo "<td>".$row["Absceso_pelvico_proyecto"]."</td> ";
+}
+
+if ($_POST["Tratamiento_recidiva_local"] == 1)
+{	
+    echo "<td>".$row["Tratamiento_recidiva_local"]."</td> ";
+}
+
+if ($_POST["Cirugia_recidiva_curativa"] == 1)
+{	
+    echo "<td>".$row["Cirugia_recidiva_curativa"]."</td> ";
 }
 
 

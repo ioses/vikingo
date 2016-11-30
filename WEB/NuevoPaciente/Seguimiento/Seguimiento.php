@@ -235,6 +235,48 @@ if (!isset($_SESSION["NombreHospital"])){
     				                </dd>
 
     				            </dl>
+                                
+                                 <?php
+                                    //2016Diciembre introduccion nuevas variables para estudio 5 hospitales
+                                    if ($Nombre=="HOSPITALPRUEBA" && $loc<7){
+                                   ?>
+                                <dt>
+                                    <label class="negrita" style="background-color: #d59392">Tratamiento recidiva</label>
+                                </dt>
+                                <dd>
+                                    <label for="Tratamiento_recidiva_local">
+                                      <select id="Tratamiento_recidiva_local" name="Tratamiento_recidiva_local" style="width: 25%">
+                                        <option value="0"></option>
+                                        <option value="1">paliativo</option>
+                                        <option value="2">Cirugía</option>
+                                      </select>
+                                    </label>
+                                </dd>
+                                <dt>
+                                    <label class="negrita" style="background-color: #d59392">Cirugía recidiva curativa</label>
+                                </dt>
+                                <dd>
+                                    <label for="Cirugia_recidiva_curativa">
+                                      <select id="Cirugia_recidiva_curativa" name="Cirugia_recidiva_curativa" style="width: 25%">
+                                        <option value="0"></option>
+                                        <option value="1">Si</option>
+                                        <option value="2">No</option>
+                                      </select>
+                                    </label>
+                                </dd>
+                                
+                                 <?php
+                                    }else{
+                                    ?>
+                                
+                                <input type="hidden" id="Tratamiento_recidiva_local" value="0"/>
+                                <input type="hidden" id="Cirugia_recidiva_curativa" value="0"/>
+
+                                 <?php
+                                    }
+                                    ?>   
+
+                                
     				        </dd>
     				        
     				    </dl>

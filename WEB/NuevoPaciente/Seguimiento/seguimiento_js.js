@@ -397,6 +397,9 @@ function CargarDatos() {
            switch (data["Recidiva"]) {
                 case 1://Si
              
+                    document.getElementById("Cirugia_recidiva_curativa").value=data["Cirugia_recidiva_curativa"];
+                    document.getElementById("Tratamiento_recidiva_local").value=data["Tratamiento_recidiva_local"];
+                    
                     putRadioButton('B_Recidiva_Si');
                     document.getElementById("Fecha_Recidiva").value=data["Fecha_Recidiva"];
                     document.getElementById("tabla_seg_localiz_recidiva").value=data["Localizacion_Recidiva"];

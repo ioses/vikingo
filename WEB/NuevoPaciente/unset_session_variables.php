@@ -775,6 +775,14 @@ if (isset($_SESSION["Intervencion_Recidiva"])){
     unset($_SESSION["Intervencion_Recidiva"]); 
 }
 
+if (isset($_SESSION["Cirugia_recidiva_curativa"])){
+    unset($_SESSION["Cirugia_recidiva_curativa"]); 
+}
+
+if (isset($_SESSION["Tratamiento_recidiva_local"])){
+    unset($_SESSION["Tratamiento_recidiva_local"]); 
+}
+
 
 if (isset($_SESSION["Metastasis"])){
     unset($_SESSION["Metastasis"]); 

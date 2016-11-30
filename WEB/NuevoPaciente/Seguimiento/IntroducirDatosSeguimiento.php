@@ -68,6 +68,34 @@ $_SESSION["Intervencion_Recidiva"]=$Intervencion_Recidiva;
 
 
 
+if (isset($_POST["Tratamiento_recidiva_local"])){
+	$Tratamiento_recidiva_local=$_POST["Tratamiento_recidiva_local"];
+	$Tratamiento_recidiva_local=strip_tags($Tratamiento_recidiva_local);
+    $Tratamiento_recidiva_local=intval($Tratamiento_recidiva_local);
+}else{
+    $Tratamiento_recidiva_local=null;
+}
+
+$_SESSION["Tratamiento_recidiva_local"]=$Tratamiento_recidiva_local;
+
+
+
+if (isset($_POST["Cirugia_recidiva_curativa"])){
+	$Cirugia_recidiva_curativa=$_POST["Cirugia_recidiva_curativa"];
+	$Cirugia_recidiva_curativa=strip_tags($Cirugia_recidiva_curativa);
+    $Cirugia_recidiva_curativa=intval($Cirugia_recidiva_curativa);
+}else{
+    $Cirugia_recidiva_curativa=null;
+}
+
+$_SESSION["Cirugia_recidiva_curativa"]=$Cirugia_recidiva_curativa;
+
+
+
+
+
+
+
 if (isset($_POST["B_Metastasis"])){
 	$Metastasis=$_POST["B_Metastasis"];
 	$Metastasis=strip_tags($Metastasis);

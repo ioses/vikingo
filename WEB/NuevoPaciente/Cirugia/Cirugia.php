@@ -1075,6 +1075,11 @@ if (!isset($_SESSION["NombreHospital"])){
           <input type="hidden" id="Dehiscencia_sutura_proyecto" value="0"/>
           <input type="hidden" id="Reseccion_organos_vecinos_proyecto" value="0"/>
           <input type="hidden" id="Absceso_pelvico_proyecto" value="0"/>
+          <input type="hidden" id="Reseccion_organo_vagina" value="0"/>
+          <input type="hidden" id="Reseccion_organo_prostata" value="0"/>
+          <input type="hidden" id="Reseccion_organo_vejiga" value="0"/>
+          <input type="hidden" id="Reseccion_organo_seminales" value="0"/>
+          <input type="hidden" id="Reseccion_organo_utero" value="0"/>
         <?php
          }
          ?>   
