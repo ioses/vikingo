@@ -42,6 +42,7 @@ $a=array(
     "Tipo_Anastomosis_coloanal"=>$_SESSION["Tipo_Anastomosis_coloanal"],
     "Reseccion_interesfinteriana"=>$_SESSION["Reseccion_interesfinteriana"],
     "Tipo_Reseccion_interesfinteriana"=>$_SESSION["Tipo_Reseccion_interesfinteriana"],
+    "Reseccion_organos_vecinos_proyecto"=>$_SESSION["Reseccion_organos_vecinos_proyecto"],
     "Tipo_Reseccion_organos"=>$_SESSION["Tipo_Reseccion_organos"],
     "Otra_Tecnica_Cirugia"=>$Tecnicas,
 	"Orientacion"=>$_SESSION["Orientacion"],

@@ -380,6 +380,10 @@ if (!isset($_SESSION["NombreHospital"])){
                                     <input type="checkbox" id="Tipo_Reseccion_interesfinteriana" name="Tipo_Reseccion_interesfinteriana" value="1"/>
                                 Tipo Resección interesfinteriana</label>
                             
+                                <label class="labelCheck" for="Reseccion_organos_vecinos_proyecto">
+                                    <input type="checkbox" id="Reseccion_organos_vecinos_proyecto" name="Reseccion_organos_vecinos_proyecto" value="1"/>
+                                Resección órganos vecinos proyecto</label>
+                            
                                 <label class="labelCheck" for="Tipo_Reseccion_organos">
                                     <input type="checkbox" id="Tipo_Reseccion_organos" name="Tipo_Reseccion_organos" value="1"/>
                                 Tipo Resección órganos</label>                            

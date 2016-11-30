@@ -623,6 +623,7 @@ function HabilitaCirugia() {
         document.getElementById("Tipo_Anastomosis_coloanal").disabled = true;
         document.getElementById("Reseccion_interesfinteriana").disabled = true;
         document.getElementById("Tipo_Reseccion_interesfinteriana").disabled = true;
+        document.getElementById("Reseccion_organos_vecinos_proyecto").disabled = true;
         document.getElementById("Tipo_Reseccion_organos").disabled = true;
         document.getElementById("Otras_Tecnicas").disabled = true;
         document.getElementById("Exeresis_Mesorrecto").disabled = true;
@@ -731,6 +732,7 @@ function HabilitaCirugia() {
          document.getElementById("Tipo_Anastomosis_coloanal").disabled = false;
          document.getElementById("Reseccion_interesfinteriana").disabled = false;
          document.getElementById("Tipo_Reseccion_interesfinteriana").disabled = false;
+         document.getElementById("Reseccion_organos_vecinos_proyecto").disabled = false;
          document.getElementById("Tipo_Reseccion_organos").disabled = false;
         document.getElementById("Otras_Tecnicas").disabled = false;
         //document.getElementById("Exeresis_Mesorrecto").disabled = false;
@@ -947,7 +949,9 @@ function CargarDatos() {
                  document.getElementById("Reseccion_interesfinteriana").value=data["Reseccion_interesfinteriana"];
                  
                   document.getElementById("Tipo_Reseccion_interesfinteriana").value=data["Tipo_Reseccion_interesfinteriana"];
-                  
+                 
+                document.getElementById("Reseccion_organos_vecinos_proyecto").value=data["Reseccion_organos_vecinos_proyecto"];
+                
                   document.getElementById("Tipo_Reseccion_organos").value=data["Tipo_Reseccion_organos"];
                
                //var cir = data["Otra_Tecnica_Cirugia"][1] + " " + data["Otra_Tecnica_Cirugia"][2] + " count " + data["Otra_Tecnica_Cirugia"].length + "; ";   

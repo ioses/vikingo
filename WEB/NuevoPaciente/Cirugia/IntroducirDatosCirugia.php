@@ -153,6 +153,16 @@ if (isset($_POST["Tipo_Reseccion_interesfinteriana"])){
 	$_SESSION["Tipo_Reseccion_interesfinteriana"]=$Tipo_Reseccion_interesfinteriana;
 }
 
+if (isset($_POST["Reseccion_organos_vecinos_proyecto"])){
+	$Reseccion_organos_vecinos_proyecto=$_POST["Reseccion_organos_vecinos_proyecto"];
+	$Reseccion_organos_vecinos_proyecto=strip_tags($Reseccion_organos_vecinos_proyecto);
+	$Reseccion_organos_vecinos_proyecto=intval($Reseccion_organos_vecinos_proyecto);
+	$_SESSION["Reseccion_organos_vecinos_proyecto"]=$Reseccion_organos_vecinos_proyecto;
+}else{
+	$Tipo_Reseccion_organos=null;
+	$_SESSION["Tipo_Reseccion_organos"]=$Tipo_Reseccion_organos;
+}
+
 if (isset($_POST["Tipo_Reseccion_organos"])){
 	$Tipo_Reseccion_organos=$_POST["Tipo_Reseccion_organos"];
 	$Tipo_Reseccion_organos=strip_tags($Tipo_Reseccion_organos);
