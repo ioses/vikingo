@@ -233,19 +233,29 @@ if (!isset($_SESSION["NombreHospital"])){
                                             <input type="radio" name="B_Recidiva_Intervencion" id="B_Recidiva_Intervencion_No"  value="2" disabled required />   
                                         No</label>
     				                </dd>
+                                 </dl>
+    				        </dd>
+    				        
+    				    </dl>
+    				</div> <!--/row-fluid-->
+    			</div><!--/hero-unit-->
 
-    				            </dl>
                                 
                                  <?php
+                                  $loc = $_SESSION["Localizacion"];
                                     //2016Diciembre introduccion nuevas variables para estudio 5 hospitales
                                     if ($Nombre=="HOSPITALPRUEBA" && $loc<7){
                                    ?>
+                      <h3>NUEVAS VARIABLES PROYECTO</h3>
+                        <div class="hero-unit" style="background-color: #d59392">
+                            <div class="row-fluid">
+                                <dl class="dl-horizontal-principal">        
                                 <dt>
                                     <label class="negrita" style="background-color: #d59392">Tratamiento recidiva</label>
                                 </dt>
                                 <dd>
                                     <label for="Tratamiento_recidiva_local">
-                                      <select id="Tratamiento_recidiva_local" name="Tratamiento_recidiva_local" style="width: 25%">
+                                      <select id="Tratamiento_recidiva_local" name="Tratamiento_recidiva_local" style="width: 25%" disabled>
                                         <option value="0"></option>
                                         <option value="1">paliativo</option>
                                         <option value="2">Cirugía</option>
@@ -257,13 +267,25 @@ if (!isset($_SESSION["NombreHospital"])){
                                 </dt>
                                 <dd>
                                     <label for="Cirugia_recidiva_curativa">
-                                      <select id="Cirugia_recidiva_curativa" name="Cirugia_recidiva_curativa" style="width: 25%">
+                                      <select id="Cirugia_recidiva_curativa" name="Cirugia_recidiva_curativa" style="width: 25%" disabled>
                                         <option value="0"></option>
                                         <option value="1">Si</option>
                                         <option value="2">No</option>
                                       </select>
                                     </label>
                                 </dd>
+                                 <dt>
+                                    <label class="negrita" style="background-color: #d59392">Tipo cirugía recidiva local</label>
+                                </dt>
+                                <dd>
+                                    <input type="text" id="tipo_cirugia_recidiva_local" name="tipo_cirugia_recidiva_local" disabled/> 
+                                </dd>
+
+                            </dl>
+                    </div> 
+                </div>                            
+                                
+                                 
                                 
                                  <?php
                                     }else{
@@ -271,17 +293,13 @@ if (!isset($_SESSION["NombreHospital"])){
                                 
                                 <input type="hidden" id="Tratamiento_recidiva_local" value="0"/>
                                 <input type="hidden" id="Cirugia_recidiva_curativa" value="0"/>
+                                 <input type="hidden" id="tipo_cirugia_recidiva_local" value="0"/>
 
                                  <?php
                                     }
                                     ?>   
 
-                                
-    				        </dd>
-    				        
-    				    </dl>
-    				</div> <!--/row-fluid-->
-    			</div><!--/hero-unit-->
+
 
                 <!-- ************   Metástasis  ************* -->
                 <a name="metastasis"> &nbsp;</a>

@@ -1150,6 +1150,7 @@
        
        $Tratamiento_recidiva_local=["Tratamiento_recidiva_local"];
        $Cirugia_recidiva_curativa=$rowRecidiva["Cirugia_recidiva_curativa"];
+       $tipo_cirugia_recidiva_local=$rowRecidiva["tipo_cirugia_recidiva_local"];
        
        if (intval($rowRecidiva["Intervencion"]) == 1)
        {
@@ -1167,6 +1168,7 @@
        
        $Recidiva = $Recidiva . "<br/> " . $Tratamiento_recidiva_local . "</dd>";
        $Recidiva = $Recidiva . "<br/> " . $Cirugia_recidiva_curativa . "</dd>";
+       $Recidiva = $Recidiva . "<br/> " . $tipo_cirugia_recidiva_local . "</dd>";
    
        
     }

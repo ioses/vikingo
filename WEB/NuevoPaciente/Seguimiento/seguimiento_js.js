@@ -105,12 +105,22 @@ function HabilitaRecidiva() {
             document.getElementById("tabla_seg_localiz_recidiva").disabled = false;
             document.getElementById("B_Recidiva_Intervencion_Si").disabled = false;
             document.getElementById("B_Recidiva_Intervencion_No").disabled = false;
+            
+            document.getElementById("Tratamiento_recidiva_local").disabled = false;
+            document.getElementById("Cirugia_recidiva_curativa").disabled = false;
+            document.getElementById("tipo_cirugia_recidiva_local").disabled = false;
     
         } else if (document.Seguimiento.B_Recidiva[0].checked) {
             document.getElementById("Fecha_Recidiva").disabled = true;
             document.getElementById("tabla_seg_localiz_recidiva").disabled = true;
             document.getElementById("B_Recidiva_Intervencion_Si").disabled = true;
             document.getElementById("B_Recidiva_Intervencion_No").disabled = true;
+            
+            document.getElementById("Tratamiento_recidiva_local").disabled = true;
+            document.getElementById("Cirugia_recidiva_curativa").disabled = true;
+            document.getElementById("tipo_cirugia_recidiva_local").disabled = true;
+            
+            
         }
     }
 }
@@ -399,6 +409,7 @@ function CargarDatos() {
              
                     document.getElementById("Cirugia_recidiva_curativa").value=data["Cirugia_recidiva_curativa"];
                     document.getElementById("Tratamiento_recidiva_local").value=data["Tratamiento_recidiva_local"];
+                      document.getElementById("tipo_cirugia_recidiva_local").value=data["tipo_cirugia_recidiva_local"];
                     
                     putRadioButton('B_Recidiva_Si');
                     document.getElementById("Fecha_Recidiva").value=data["Fecha_Recidiva"];

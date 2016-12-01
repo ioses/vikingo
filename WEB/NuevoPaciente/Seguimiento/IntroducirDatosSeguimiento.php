@@ -92,6 +92,16 @@ $_SESSION["Cirugia_recidiva_curativa"]=$Cirugia_recidiva_curativa;
 
 
 
+if (isset($_POST["tipo_cirugia_recidiva_local"])){
+    $tipo_cirugia_recidiva_local=$_POST["tipo_cirugia_recidiva_local"];
+    $tipo_cirugia_recidiva_local=strip_tags($tipo_cirugia_recidiva_local);
+    $tipo_cirugia_recidiva_local=utf8_decode($tipo_cirugia_recidiva_local);
+}else{
+    $tipo_cirugia_recidiva_local=null;
+}
+
+$_SESSION["tipo_cirugia_recidiva_local"]=$tipo_cirugia_recidiva_local;
+
 
 
 

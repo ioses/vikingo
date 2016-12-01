@@ -57,6 +57,7 @@ while($row = mysqli_fetch_array($result)){
         $Invasion=$rowInicial[8];
         $MetastasisInicial=$rowInicial[9];
         $EstadioRadio=$rowInicial[10];
+        $Clasificacion_Rullier=$rowInicial[11];
         
         $TAC=$rowInicial[5];
         

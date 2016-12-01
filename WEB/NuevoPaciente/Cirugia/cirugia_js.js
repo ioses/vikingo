@@ -625,7 +625,15 @@ function HabilitaCirugia() {
         document.getElementById("Tipo_Reseccion_interesfinteriana").disabled = true;
         document.getElementById("Reseccion_organos_vecinos_proyecto").disabled = true;
         document.getElementById("Dehiscencia_sutura_proyecto").disabled = true;
-        document.getElementById("Tipo_Reseccion_organos").disabled = true;
+        document.getElementById("Tipo_Reseccion_organos").disabled = true;     
+        document.getElementById("Absceso_pelvico_proyecto").disabled = true;
+        document.getElementById("Reseccion_organo_vagina").disabled = true;
+        document.getElementById("Reseccion_organo_prostata").disabled = true;
+        document.getElementById("Reseccion_organo_vejiga").disabled = true;
+        document.getElementById("Reseccion_organo_seminales").disabled = true;
+        document.getElementById("Reseccion_organo_utero").disabled = true;
+        
+        
         document.getElementById("Otras_Tecnicas").disabled = true;
         document.getElementById("Exeresis_Mesorrecto").disabled = true;
         document.getElementById("Otras_Resecciones_SI").disabled = true;
@@ -737,6 +745,14 @@ function HabilitaCirugia() {
          document.getElementById("Dehiscencia_sutura_proyecto").disabled = false;
          document.getElementById("Tipo_Reseccion_organos").disabled = false;
         document.getElementById("Otras_Tecnicas").disabled = false;
+        
+        document.getElementById("Absceso_pelvico_proyecto").disabled = false;
+        document.getElementById("Reseccion_organo_vagina").disabled = false;
+        document.getElementById("Reseccion_organo_prostata").disabled = false;
+        document.getElementById("Reseccion_organo_vejiga").disabled = false;
+        document.getElementById("Reseccion_organo_seminales").disabled = false;
+        document.getElementById("Reseccion_organo_utero").disabled = false;
+        
         //document.getElementById("Exeresis_Mesorrecto").disabled = false;
         document.getElementById("Otras_Resecciones_SI").disabled = false;
         document.getElementById("Otras_Resecciones_NO").disabled = false;

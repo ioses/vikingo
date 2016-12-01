@@ -201,6 +201,7 @@
     
     $_SESSION["Tratamiento_recidiva_local"] = null;
     $_SESSION["Cirugia_recidiva_curativa"] = null;
+    $_SESSION["tipo_cirugia_recidiva_local"] = null;
     
     
     $_SESSION["Metastasis"] = 2;
@@ -1215,6 +1216,7 @@
        
        $_SESSION["Tratamiento_recidiva_local"]=intval($rowRecidiva["Tratamiento_recidiva_local"]);
        $_SESSION["Cirugia_recidiva_curativa"]=intval($rowRecidiva["Cirugia_recidiva_curativa"]);
+       $_SESSION["tipo_cirugia_recidiva_local"]=utf8_encode($rowRecidiva["tipo_cirugia_recidiva_local"]);
        
        
     }

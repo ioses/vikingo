@@ -307,6 +307,7 @@
     
     $Cirugia_recidiva_curativa=$_SESSION["Cirugia_recidiva_curativa"];
     $Tratamiento_recidiva_local=$_SESSION["Tratamiento_recidiva_local"];
+     $tipo_cirugia_recidiva_local=$_SESSION["tipo_cirugia_recidiva_local"];
     
     $Metastasis=$_SESSION["Metastasis"];
     $Fecha_Metastasis=$_SESSION["Fecha_Metastasis"];
@@ -2845,8 +2846,8 @@ if($RellenarPatologica!=1) //Se ha rellenado la hoja de anatomia patológica
             $LocalizacionRecidiva=$row[0];  
        }
    
-      $sqlRecidiva= "INSERT INTO tabla_recidiva (Id_Seguimiento, Fecha_Recidiva, Intervencion, Id_tabla_seg_localiz_recidiva,Cirugia_recidiva_curativa, Tratamiento_recidiva_local)
-                      VALUES ('$IdSeguimiento', '$Fecha_Recidiva',  '$Intervencion_Recidiva', '$LocalizacionRecidiva','$Cirugia_recidiva_curativa','$Tratamiento_recidiva_local')";
+      $sqlRecidiva= "INSERT INTO tabla_recidiva (Id_Seguimiento, Fecha_Recidiva, Intervencion, Id_tabla_seg_localiz_recidiva,Cirugia_recidiva_curativa, Tratamiento_recidiva_local,tipo_cirugia_recidiva_local)
+                      VALUES ('$IdSeguimiento', '$Fecha_Recidiva',  '$Intervencion_Recidiva', '$LocalizacionRecidiva','$Cirugia_recidiva_curativa','$Tratamiento_recidiva_local','$tipo_cirugia_recidiva_local')";
         
       mysqli_query($conexion,$sqlRecidiva)
       or die(header("Location: EliminaPaciente/elimina_paciente.php"));
@@ -4185,6 +4186,7 @@ if($Recidiva==1){
     $LocalizacionRecidiva=$rowFechaRecidiva[3];
     $Cirugia_recidiva_curativa=$rowFechaRecidiva[4];
     $Tratamiento_recidiva_local=$rowFechaRecidiva[5];
+    $tipo_cirugia_recidiva_local=$rowFechaRecidiva[6];
 	
 }else{
 	$FechaRecidiva=$FechaRevision;
@@ -4275,7 +4277,7 @@ $sqlRellenaTablaGeneral="INSERT INTO tabla_general (Hospital, NHC, Recidiva, Fec
                              ECO, RMN, Dist_Tumor, Dist_Adeno, Integ_Esfinter, Cirujano_Principal, Cirujano_Ayudante, Obstruccion, Tipo_Histologico, Otros_Histologico, Estadio_Tumor_Sincronico,
                              Localizacion_Recidiva, Intervencion_Recidiva, Localizacion_Metastasis, Intervencion_Metastasis, Localizacion_Segundo_Tumor, Intervencion_Segundo_Tumor, Causa_Imposibilidad, Clasificacion_Rullier, 
                              Tipo_Anastomosis_Proyecto, Tipo_Anastomosis_coloanal,Reseccion_interesfinteriana, Tipo_Reseccion_interesfinteriana, Tipo_Reseccion_organos,Reseccion_organos_vecinos_proyecto, Dehiscencia_sutura_proyecto, Absceso_pelvico_proyecto, 
-                             Reseccion_organo_vagina, Reseccion_organo_prostata, Reseccion_organo_vejiga, Reseccion_organo_seminales, Reseccion_organo_utero, Cirugia_recidiva_curativa, Tratamiento_recidiva_local) 
+                             Reseccion_organo_vagina, Reseccion_organo_prostata, Reseccion_organo_vejiga, Reseccion_organo_seminales, Reseccion_organo_utero, Cirugia_recidiva_curativa, Tratamiento_recidiva_local,tipo_cirugia_recidiva_local) 
 							 VALUES 
 							 ('$Id_Hospital', '$NHC', '$Recidiva', '$FechaRecidiva', '$Metastasis', '$FechaMetastasis', '$Segundo_Tumor', '$FechaSegundoTumor', '$Estado', '$CausaMuerte', '$FechaMuerte', 
 							 '$FechaRevision', '$Imposibilidad', '$MesesSeguimiento', '$FechaNacimiento', '$Sexo', '$Localizacion', '$Sincro', '$EcoT', '$EcoN', '$TAC', '$RmnT', '$RmnN', '$EstadioRadio', 
@@ -4291,7 +4293,7 @@ $sqlRellenaTablaGeneral="INSERT INTO tabla_general (Hospital, NHC, Recidiva, Fec
                             '$LocalizacionRecidiva', '$IntervencionRecidiva', '$LocalizacionMetastasis', '$IntervencionMetastasis', 
                             '$LocalizacionSegundoTumor', '$IntervencionSegundoTumor', '$CausaImposibilidad','$Clasificacion_Rullier','$Tipo_Anastomosis_Proyecto', '$Tipo_Anastomosis_coloanal','$Reseccion_interesfinteriana',"
         . "                    '$Tipo_Reseccion_interesfinteriana','$Tipo_Reseccion_organos','$Reseccion_organos_vecinos_proyecto','$Dehiscencia_sutura_proyecto','$Absceso_pelvico_proyecto','$Reseccion_organo_vagina','$Reseccion_organo_prostata',"
-        . "                     '$Reseccion_organo_vejiga','$Reseccion_organo_seminales','$Reseccion_organo_utero','$Cirugia_recidiva_curativa','$Tratamiento_recidiva_local')"; 
+        . "                     '$Reseccion_organo_vejiga','$Reseccion_organo_seminales','$Reseccion_organo_utero','$Cirugia_recidiva_curativa','$Tratamiento_recidiva_local','$tipo_cirugia_recidiva_local')"; 
 
 
 

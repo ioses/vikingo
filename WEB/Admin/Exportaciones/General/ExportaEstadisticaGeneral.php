@@ -541,7 +541,88 @@ if ($_POST["Comentarios_Adicionales"] == 1)
 {
     echo "<th>ComentariosAdicionales</th>";
 }
+if ($_POST["Clasificacion_Rullier"] == 1)
+{
     echo "<th>Clasificacion_Rullier</th>";
+}
+
+if ($_POST["Tipo_Anastomosis_Proyecto"] == 1)
+{
+    echo "<th>Tipo_Anastomosis_Proyecto</th>";
+}
+
+if ($_POST["Tipo_Anastomosis_coloanal"] == 1)
+{
+    echo "<th>Tipo_Anastomosis_coloanal</th>";
+}
+
+if ($_POST["Reseccion_interesfinteriana"] == 1)
+{
+    echo "<th>Reseccion_interesfinteriana</th>";
+}
+
+if ($_POST["Tipo_Reseccion_interesfinteriana"] == 1)
+{
+    echo "<th>Tipo_Reseccion_interesfinteriana</th>";
+}
+
+if ($_POST["Reseccion_organos_vecinos_proyecto"] == 1)
+{
+    echo "<th>Reseccion_organos_vecinos_proyecto</th>";
+}
+
+
+if ($_POST["Tipo_Reseccion_organos"] == 1)
+{
+    echo "<th>Tipo_Reseccion_organos</th>";
+}
+
+if ($_POST["Reseccion_organo_vagina"] == 1)
+{
+    echo "<th>Reseccion_organo_vagina</th>";
+}
+if ($_POST["Reseccion_organo_prostata"] == 1)
+{
+    echo "<th>Reseccion_organo_prostata</th>";
+}
+if ($_POST["Reseccion_organo_vejiga"] == 1)
+{
+    echo "<th>Reseccion_organo_vejiga</th>";
+}
+if ($_POST["Reseccion_organo_seminales"] == 1)
+{
+    echo "<th>Reseccion_organo_seminales</th>";
+}
+if ($_POST["Reseccion_organo_utero"] == 1)
+{
+    echo "<th>Reseccion_organo_utero</th>";
+}
+
+if ($_POST["Dehiscencia_sutura_proyecto"] == 1)
+{
+    echo "<th>Dehiscencia_sutura_proyecto</th>";
+}
+
+if ($_POST["Absceso_pelvico_proyecto"] == 1)
+{
+    echo "<th>Absceso_pelvico_proyecto</th>";
+}
+
+if ($_POST["Tratamiento_recidiva_local"] == 1)
+{
+    echo "<th>Tratamiento_recidiva_local</th>";
+}
+
+if ($_POST["Cirugia_recidiva_curativa"] == 1)
+{
+    echo "<th>Cirugia_recidiva_curativa</th>";
+}
+
+if ($_POST["tipo_cirugia_recidiva_local"] == 1)
+{
+    echo "<th>tipo_cirugia_recidiva_local</th>";
+}
+
 
 echo "</tr> ";
 
@@ -1733,7 +1814,96 @@ if ($_POST["Comentarios_Adicionales"] == 1)
     echo "<td>".$row["Comentarios_Adicionales"]."</td> ";
 }       
 	
-	echo "<td>".$row["Clasificacion_Rullier"]."</td> ";
+if ($_POST["Clasificacion_Rullier"] == 1)
+{	
+    echo "<td>".$row["Clasificacion_Rullier"]."</td> ";
+}  
+
+if ($_POST["Tipo_Anastomosis_Proyecto"] == 1)
+{	
+    echo "<td>".$row["Tipo_Anastomosis_Proyecto"]."</td> ";
+}  
+
+if ($_POST["Tipo_Anastomosis_coloanal"] == 1)
+{	
+    echo "<td>".$row["Tipo_Anastomosis_coloanal"]."</td> ";
+}  
+
+if ($_POST["Reseccion_interesfinteriana"] == 1)
+{	
+    echo "<td>".$row["Reseccion_interesfinteriana"]."</td> ";
+} 
+
+if ($_POST["Tipo_Reseccion_interesfinteriana"] == 1)
+{	
+    echo "<td>".$row["Tipo_Reseccion_interesfinteriana"]."</td> ";
+} 
+
+if ($_POST["Reseccion_organos_vecinos_proyecto"] == 1)
+{	
+    echo "<td>".$row["Reseccion_organos_vecinos_proyecto"]."</td> ";
+} 
+
+if ($_POST["Tipo_Reseccion_organos"] == 1)
+{	
+    echo "<td>".$row["Tipo_Reseccion_organos"]."</td> ";
+} 
+
+
+if ($_POST["Reseccion_organo_vagina"] == 1)
+{	
+    echo "<td>".$row["Reseccion_organo_vagina"]."</td> ";
+} 
+
+if ($_POST["Reseccion_organo_prostata"] == 1)
+{	
+    echo "<td>".$row["Reseccion_organo_prostata"]."</td> ";
+} 
+
+if ($_POST["Reseccion_organo_vejiga"] == 1)
+{	
+    echo "<td>".$row["Reseccion_organo_vejiga"]."</td> ";
+} 
+
+if ($_POST["Reseccion_organo_seminales"] == 1)
+{	
+    echo "<td>".$row["Reseccion_organo_seminales"]."</td> ";
+} 
+
+if ($_POST["Reseccion_organo_utero"] == 1)
+{	
+    echo "<td>".$row["Reseccion_organo_utero"]."</td> ";
+} 
+
+
+
+
+
+
+if ($_POST["Dehiscencia_sutura_proyecto"] == 1)
+{	
+    echo "<td>".$row["Dehiscencia_sutura_proyecto"]."</td> ";
+} 
+
+if ($_POST["Absceso_pelvico_proyecto"] == 1)
+{	
+    echo "<td>".$row["Absceso_pelvico_proyecto"]."</td> ";
+}
+
+if ($_POST["Tratamiento_recidiva_local"] == 1)
+{	
+    echo "<td>".$row["Tratamiento_recidiva_local"]."</td> ";
+}
+
+if ($_POST["Cirugia_recidiva_curativa"] == 1)
+{	
+    echo "<td>".$row["Cirugia_recidiva_curativa"]."</td> ";
+}
+
+if ($_POST["tipo_cirugia_recidiva_local"] == 1)
+{	
+    echo "<td>".$row["tipo_cirugia_recidiva_local"]."</td> ";
+}
     
     
 		

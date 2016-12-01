@@ -169,6 +169,9 @@ $(document).ready(function(){
         
         document.getElementById('Tratamiento_recidiva_local').checked=true;
         document.getElementById('Cirugia_recidiva_curativa').checked=true;
+        document.getElementById('tipo_cirugia_recidiva_local').checked=true;
+        
+       
         
         document.getElementById('Localizacion_Metastasis').checked=true;
         document.getElementById('Intervencion_Metastasis').checked=true;
@@ -342,8 +345,11 @@ $(document).ready(function(){
         document.getElementById('Localizacion_Recidiva').checked=false;
         document.getElementById('Intervencion_Recidiva').checked=false;
         
+
+        
         document.getElementById('Tratamiento_recidiva_local').checked=false;
         document.getElementById('Cirugia_recidiva_curativa').checked=false;
+        document.getElementById('tipo_cirugia_recidiva_local').checked=false;
         
         document.getElementById('Localizacion_Metastasis').checked=false;
         document.getElementById('Intervencion_Metastasis').checked=false;
@@ -669,8 +675,11 @@ $(document).ready(function(){
         document.getElementById('Localizacion_Recidiva').checked=true;
         document.getElementById('Intervencion_Recidiva').checked=true;
         
+       
+        
         document.getElementById('Tratamiento_recidiva_local').checked=true;
         document.getElementById('Cirugia_recidiva_curativa').checked=true;
+        document.getElementById('tipo_cirugia_recidiva_local').checked=true;
         
         document.getElementById('Localizacion_Metastasis').checked=true;
         document.getElementById('Intervencion_Metastasis').checked=true;
@@ -698,8 +707,11 @@ $(document).ready(function(){
         document.getElementById('Localizacion_Recidiva').checked=false;
         document.getElementById('Intervencion_Recidiva').checked=false;
         
+     
+        
         document.getElementById('Tratamiento_recidiva_local').checked=false;
         document.getElementById('Cirugia_recidiva_curativa').checked=false;
+        document.getElementById('tipo_cirugia_recidiva_local').checked=false;
         
         document.getElementById('Localizacion_Metastasis').checked=false;
         document.getElementById('Intervencion_Metastasis').checked=false;

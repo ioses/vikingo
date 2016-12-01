@@ -31,6 +31,7 @@ $a=array(
     "Intervencion_Recidiva"=>$_SESSION["Intervencion_Recidiva"],
     "Tratamiento_recidiva_local"=>$_SESSION["Tratamiento_recidiva_local"],
     "Cirugia_recidiva_curativa"=>$_SESSION["Cirugia_recidiva_curativa"],
+    "tipo_cirugia_recidiva_local"=>$_SESSION["tipo_cirugia_recidiva_local"],
     "Metastasis"=>$_SESSION["Metastasis"],
     "Fecha_Metastasis"=>$_SESSION["Fecha_Metastasis"],
     "Localizacion_Metastasis"=>$_SESSION["Localizacion_Metastasis"],

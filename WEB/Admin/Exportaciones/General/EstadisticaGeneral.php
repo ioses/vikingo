@@ -162,6 +162,11 @@ if (!isset($_SESSION["EntraAdmin"])){
                                 <label class="labelCheck" for="Localizacion">
                                     <input type="checkbox" id="Localizacion" name="Localizacion" value="1"/>
                                 Localización</label>
+                            
+                            
+                                 <label class="labelCheck" for="Clasificacion_Rullier">
+                                    <input type="checkbox" id="Clasificacion_Rullier" name="Clasificacion_Rullier" value="1"/>
+                                Clasificación Rullier</label>
                                 
                                 <label class="labelCheck" for="TumorSincronico">
                                     <input type="checkbox" id="TumorSincronico" name="TumorSincronico" value="1"/>
@@ -314,6 +319,14 @@ if (!isset($_SESSION["EntraAdmin"])){
                                 <label class="labelCheck" for="Tecnica">
                                     <input type="checkbox" id="Tecnica" name="Tecnica" value="1"/>
                                 Técnica</label>
+                            
+                            <label class="labelCheck" for="Tipo_Anastomosis_Proyecto">
+                                    <input type="checkbox" id="Tipo_Anastomosis_Proyecto" name="Tipo_Anastomosis_Proyecto" value="1"/>
+                                Tipo Anastomosis Proyecto</label>
+                            
+                                <label class="labelCheck" for="Tipo_Anastomosis_coloanal">
+                                    <input type="checkbox" id="Tipo_Anastomosis_coloanal" name="Tipo_Anastomosis_coloanal" value="1"/>
+                                Anastomosis coloanal</label>
                                 
                                 <label class="labelCheck" for="OtraTecnica">
                                     <input type="checkbox" id="OtraTecnica" name="OtraTecnica" value="1"/>
@@ -326,6 +339,53 @@ if (!isset($_SESSION["EntraAdmin"])){
                                 <label class="labelCheck" for="ExeresisMesorrecto">
                                     <input type="checkbox" id="ExeresisMesorrecto" name="ExeresisMesorrecto" value="1"/>
                                 Exéresis mesorrecto</label>
+                            
+                                   <label class="labelCheck" for="Reseccion_interesfinteriana">
+                                    <input type="checkbox" id="Reseccion_interesfinteriana" name="Reseccion_interesfinteriana" value="1"/>
+                                Resección interesfinteriana</label>
+                            
+                                <label class="labelCheck" for="Tipo_Reseccion_interesfinteriana">
+                                    <input type="checkbox" id="Tipo_Reseccion_interesfinteriana" name="Tipo_Reseccion_interesfinteriana" value="1"/>
+                                Tipo Resección interesfinteriana</label>
+                            
+                                <label class="labelCheck" for="Reseccion_organos_vecinos_proyecto">
+                                    <input type="checkbox" id="Reseccion_organos_vecinos_proyecto" name="Reseccion_organos_vecinos_proyecto" value="1"/>
+                                Resección órganos vecinos proyecto</label>
+                            
+                                <label class="labelCheck" for="Tipo_Reseccion_organos">
+                                    <input type="checkbox" id="Tipo_Reseccion_organos" name="Tipo_Reseccion_organos" value="1"/>
+                                Tipo Resección órganos</label> 
+                            
+                                <label class="labelCheck" for="Reseccion_organo_vagina">
+                                    <input type="checkbox" id="Reseccion_organo_vagina" name="Reseccion_organo_vagina" value="1"/>
+                                Resección vagina</label>    
+                            
+                            <label class="labelCheck" for="Reseccion_organo_prostata">
+                                    <input type="checkbox" id="Reseccion_organo_prostata" name="Reseccion_organo_prostata" value="1"/>
+                                Resección próstata</label>    
+                            
+                            <label class="labelCheck" for="Reseccion_organo_seminales">
+                                    <input type="checkbox" id="Reseccion_organo_seminales" name="Reseccion_organo_seminales" value="1"/>
+                                 Resección seminales </label>    
+                            
+                            <label class="labelCheck" for="Reseccion_organo_vejiga">
+                                    <input type="checkbox" id="Reseccion_organo_vejiga" name="Reseccion_organo_vejiga" value="1"/>
+                                Resección vejiga</label>    
+                            
+                            <label class="labelCheck" for="Reseccion_organo_utero">
+                                    <input type="checkbox" id="Reseccion_organo_utero" name="Reseccion_organo_utero" value="1"/>
+                                Resección útero</label>    
+                            
+                            
+                            
+                            
+                            <label class="labelCheck" for="Dehiscencia_sutura_proyecto">
+                                    <input type="checkbox" id="Dehiscencia_sutura_proyecto" name="Dehiscencia_sutura_proyecto" value="1"/>
+                                Dehiscencia sutura proyecto</label> 
+                            
+                            <label class="labelCheck" for="Absceso_pelvico_proyecto">
+                                    <input type="checkbox" id="Absceso_pelvico_proyecto" name="Absceso_pelvico_proyecto" value="1"/>
+                                Absceso pelvico proyecto</label>                          
                                 
                                 <label class="labelCheck" for="OtrasResecciones">
                                     <input type="checkbox" id="OtrasResecciones" name="OtrasResecciones" value="1"/>
@@ -709,6 +769,19 @@ if (!isset($_SESSION["EntraAdmin"])){
                                 <label class="labelCheck" for="Intervencion_Recidiva">
                                     <input type="checkbox" id="Intervencion_Recidiva" name="Intervencion_Recidiva" value="1"/>
                                 Intervención recidiva</label>
+                            
+                            
+                                   <label class="labelCheck" for="Tratamiento_recidiva_local">
+                                    <input type="checkbox" id="Tratamiento_recidiva_local" name="Tratamiento_recidiva_local" value="1"/>
+                                Tratamiento recidiva local</label>
+                            
+                                 <label class="labelCheck" for="Cirugia_recidiva_curativa">
+                                    <input type="checkbox" id="Cirugia_recidiva_curativa" name="Cirugia_recidiva_curativa" value="1"/>
+                                Cirugía recidiva curativa</label>                           
+                            
+                                <label class="labelCheck" for="tipo_cirugia_recidiva_local">
+                                    <input type="checkbox" id="tipo_cirugia_recidiva_local" name="tipo_cirugia_recidiva_local" value="1"/>
+                                Tipo cirugía recidiva local</label>                            
                                 
                                 <label class="labelCheck" for="Metastasis">
                                     <input type="checkbox" id="Metastasis" name="Metastasis" value="1"/>

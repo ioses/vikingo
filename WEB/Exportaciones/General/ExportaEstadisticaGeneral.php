@@ -641,6 +641,11 @@ if ($_POST["Cirugia_recidiva_curativa"] == 1)
     echo "<th>Cirugia_recidiva_curativa</th>";
 }
 
+if ($_POST["tipo_cirugia_recidiva_local"] == 1)
+{
+    echo "<th>tipo_cirugia_recidiva_local</th>";
+}
+
 
 
 echo "</tr> ";
@@ -1908,6 +1913,10 @@ if ($_POST["Cirugia_recidiva_curativa"] == 1)
     echo "<td>".$row["Cirugia_recidiva_curativa"]."</td> ";
 }
 
+if ($_POST["tipo_cirugia_recidiva_local"] == 1)
+{	
+    echo "<td>".$row["tipo_cirugia_recidiva_local"]."</td> ";
+}
 
 
 

@@ -417,7 +417,7 @@ if (!isset($_SESSION["NombreHospital"])){
                             
                             <label class="labelCheck" for="Absceso_pelvico_proyecto">
                                     <input type="checkbox" id="Absceso_pelvico_proyecto" name="Absceso_pelvico_proyecto" value="1"/>
-                                Dehiscencia sutura proyecto</label> 
+                                Absceso pelvico proyecto</label> 
                                 
                                 <label class="labelCheck" for="OtrasResecciones">
                                     <input type="checkbox" id="OtrasResecciones" name="OtrasResecciones" value="1"/>
@@ -812,6 +812,9 @@ if (!isset($_SESSION["NombreHospital"])){
                                     <input type="checkbox" id="Cirugia_recidiva_curativa" name="Cirugia_recidiva_curativa" value="1"/>
                                 Cirugía recidiva curativa</label>                           
                             
+                                <label class="labelCheck" for="tipo_cirugia_recidiva_local">
+                                    <input type="checkbox" id="tipo_cirugia_recidiva_local" name="tipo_cirugia_recidiva_local" value="1"/>
+                                Tipo cirugía recidiva local</label>
                                 
                             
                             
