@@ -1164,6 +1164,9 @@
        $Recidiva = $Recidiva . $Fecha_Recidiva;
        $Recidiva = $Recidiva . "<br/> " . $Localizacion_Recidiva;
        $Recidiva = $Recidiva . "<br/> " . $Intervencion_Recidiva . "</dd>";
+       
+       $Recidiva = $Recidiva . "<br/> " . $Tratamiento_recidiva_local . "</dd>";
+       $Recidiva = $Recidiva . "<br/> " . $Cirugia_recidiva_curativa . "</dd>";
    
        
     }
