@@ -150,3 +150,28 @@
 [23-Nov-2016 21:36:09 UTC] PHP   9. class_exists() /home/ubuntu/workspace/symfony/var/cache/dev/classes.php:2080
 [23-Nov-2016 21:36:09 UTC] PHP  10. spl_autoload_call() /home/ubuntu/workspace/symfony/var/cache/dev/classes.php:2080
 [23-Nov-2016 21:36:09 UTC] PHP  11. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/symfony/var/cache/dev/classes.php:2080
+[01-Dec-2016 21:52:14 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/symfony/src/AppBundle/Controller/CommentController.php on line 146
+[01-Dec-2016 21:52:14 UTC] PHP Stack trace:
+[01-Dec-2016 21:52:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony/web/app_dev.php:0
+[01-Dec-2016 21:52:14 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony/web/app_dev.php:31
+[01-Dec-2016 21:52:14 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:169
+[01-Dec-2016 21:52:14 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/HttpKernel.php:62
+[01-Dec-2016 21:52:14 UTC] PHP   5. Symfony\Component\EventDispatcher\Debug\TraceableEventDispatcher->dispatch() /home/ubuntu/workspace/symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/HttpKernel.php:120
+[01-Dec-2016 21:52:14 UTC] PHP   6. Symfony\Component\EventDispatcher\EventDispatcher->dispatch() /home/ubuntu/workspace/symfony/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/TraceableEventDispatcher.php:136
+[01-Dec-2016 21:52:14 UTC] PHP   7. Symfony\Component\EventDispatcher\EventDispatcher->doDispatch() /home/ubuntu/workspace/symfony/var/cache/dev/classes.php:1671
+[01-Dec-2016 21:52:14 UTC] PHP   8. call_user_func:{/home/ubuntu/workspace/symfony/var/cache/dev/classes.php:1756}() /home/ubuntu/workspace/symfony/var/cache/dev/classes.php:1756
+[01-Dec-2016 21:52:14 UTC] PHP   9. Symfony\Component\EventDispatcher\Debug\WrappedListener->__invoke() /home/ubuntu/workspace/symfony/var/cache/dev/classes.php:1756
+[01-Dec-2016 21:52:14 UTC] PHP  10. call_user_func:{/home/ubuntu/workspace/symfony/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/WrappedListener.php:61}() /home/ubuntu/workspace/symfony/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/WrappedListener.php:61
+[01-Dec-2016 21:52:14 UTC] PHP  11. Symfony\Component\HttpKernel\EventListener\RouterListener->onKernelRequest() /home/ubuntu/workspace/symfony/vendor/symfony/symfony/src/Symfony/Component/EventDispatcher/Debug/WrappedListener.php:61
+[01-Dec-2016 21:52:14 UTC] PHP  12. Symfony\Component\Routing\Router->matchRequest() /home/ubuntu/workspace/symfony/var/cache/dev/classes.php:1953
+[01-Dec-2016 21:52:14 UTC] PHP  13. Symfony\Component\Routing\Router->getMatcher() /home/ubuntu/workspace/symfony/var/cache/dev/classes.php:1221
+[01-Dec-2016 21:52:14 UTC] PHP  14. Symfony\Component\Config\ResourceCheckerConfigCacheFactory->cache() /home/ubuntu/workspace/symfony/var/cache/dev/classes.php:1253
+[01-Dec-2016 21:52:14 UTC] PHP  15. call_user_func:{/home/ubuntu/workspace/symfony/vendor/symfony/symfony/src/Symfony/Component/Config/ResourceCheckerConfigCacheFactory.php:46}() /home/ubuntu/workspace/symfony/vendor/symfony/symfony/src/Symfony/Component/Config/ResourceCheckerConfigCacheFactory.php:46
+[01-Dec-2016 21:52:14 UTC] PHP  16. Symfony\Component\Routing\Router->Symfony\Component\Routing\{closure}() /home/ubuntu/workspace/symfony/vendor/symfony/symfony/src/Symfony/Component/Config/ResourceCheckerConfigCacheFactory.php:46
+[01-Dec-2016 21:52:14 UTC] PHP  17. Symfony\Component\Routing\Router->getMatcherDumperInstance() /home/ubuntu/workspace/symfony/var/cache/dev/classes.php:1243
+[01-Dec-2016 21:52:14 UTC] PHP  18. Symfony\Bundle\FrameworkBundle\Routing\Router->getRouteCollection() /home/ubuntu/workspace/symfony/var/cache/dev/classes.php:1291
+[01-Dec-2016 21:52:14 UTC] PHP  19. Symfony\Bundle\FrameworkBundle\Routing\DelegatingLoader->load() /home/ubuntu/workspace/symfony/var/cache/dev/classes.php:1510
+[01-Dec-2016 21:52:14 UTC] PHP  20. Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser->parse() /home/ubuntu/workspace/symfony/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Routing/DelegatingLoader.php:80
+[01-Dec-2016 21:52:14 UTC] PHP  21. class_exists() /home/ubuntu/workspace/symfony/var/cache/dev/classes.php:2351
+[01-Dec-2016 21:52:14 UTC] PHP  22. spl_autoload_call() /home/ubuntu/workspace/symfony/var/cache/dev/classes.php:2351
+[01-Dec-2016 21:52:14 UTC] PHP  23. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/symfony/var/cache/dev/classes.php:2351
