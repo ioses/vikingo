@@ -175,7 +175,7 @@ if (!isset($_SESSION["NombreHospital"])){
 					        </dt>
 					        <dd>
 					            <label for="Localizacion">
-                                    <select id="Localizacion" name="Localizacion" style="width: 25%" required onchange="CambioVariables();">
+                                    <select id="Localizacion" name="Localizacion" style="width: 25%" required onkeypress="CambioVariables();">
                                         <option value="0">0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -197,7 +197,9 @@ if (!isset($_SESSION["NombreHospital"])){
 					        </dd>
                             <?php
                            // echo ("Que es".$Nombre);
-                            if ($Nombre=="HOSPITALPRUEBA"){
+                            if ($Nombre=="HOSPITALPRUEBA" || $Nombre == "H. UNIV.  BELLVITGE"
+                                    || $Nombre == "H. UNIV. DE GIRONA." ||$Nombre == "H. GENERAL VALL D HEBRON"
+                                    || $Nombre == "H. LA FE" || $Nombre == "H. DONOSTIA"){
                               
                             ?>
                             <dt style="background-color: #d59392">

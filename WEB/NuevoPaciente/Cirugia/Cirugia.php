@@ -933,7 +933,10 @@ if (!isset($_SESSION["NombreHospital"])){
       <!-------------------NUEVO PROYECTO SOLO APARECEN ALGUNOS HOSPITALES ----------------------->
        <?php
         //2016Diciembre introduccion nuevas variables para estudio 5 hospitales
-        if ($Nombre=="HOSPITALPRUEBA" && $loc<7){
+       if (($Nombre=="HOSPITALPRUEBA" || $Nombre == "H. UNIV.  BELLVITGE"
+                                    || $Nombre == "H. UNIV. DE GIRONA." ||$Nombre == "H. GENERAL VALL D HEBRON"
+                                    || $Nombre == "H. LA FE" || $Nombre == "H. DONOSTIA")&& $loc<7){
+      
        ?>
         <h3>NUEVAS VARIABLES PROYECTO</h3>
         <div class="hero-unit" style="background-color: #d59392">
